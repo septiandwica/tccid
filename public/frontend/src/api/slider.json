@@ -1,0 +1,24 @@
+[
+    {
+      "img": "frontend/images/img1.jpg",
+      "text": "The Best Spices from Indonesia",
+      "h2Line1": "Discover the difference and",
+      "h2Line2": "Exclusive: Indonesian spices.",
+      "buttonLink": "../../index.html"
+    },
+    {
+      "img": "frontend/images/img1.jpg",
+      "text": "Another Spices Description",
+      "h2Line1": "Explore the variety with",
+      "h2Line2": "our exclusive spice collection.",
+      "buttonLink": "../../index.html"
+    },
+    {
+      "img": "frontend/images/img1.jpg",
+      "text": "More Spice Details",
+      "h2Line1": "Experience the rich flavors",
+      "h2Line2": "of Indonesian spices.",
+      "buttonLink": "../../index.html"
+    }
+  ]
+  

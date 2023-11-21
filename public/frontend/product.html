@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet">
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"/>
+        <link rel="stylesheet" href="./src/css/style.css">
+        <link rel="stylesheet" href="./vendor/swiper/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="./vendor/font-awesome/css/all.min.css">
+
+        <title>Tococo</title>
+    </head>
+
+    <body>
+
+        <header class="header">
+            <div class="top-bar">
+                <div class="top-bar__content">
+                    <a href="https://wa.me/62895333230545" target="_blank" class="phone">
+                        <i class="fa-solid fa-phone icon"></i>
+                        <span>+62 8953 3323 0545</span>
+                    </a>
+                    <a
+                        href="mailto:pttococoindonesiaberkah@gmail.com"
+                        target="_blank"
+                        class="email">
+                        <i class="fa-solid fa-envelope icon"></i>
+                        <span>pttococoindonesiaberkah@gmail.com</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bottom-bar">
+                <div class="bottom-bar__content">
+                    <a href="./index.html" class="logo">
+                        <img class="logo__img" src="logo.svg" alt="logo">
+                        <span class="logo__text">Tococo</span>
+                    </a>
+
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">HOME</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">PRODUCT</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">ABOUT</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">CONTACT</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="hamburger">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="jumbotron">
+            <div class="wrapper">
+                <div class="slide-hero">
+                    <img src="images/img1.jpg" alt="" class="image"/>
+                    <div class="image-data">
+                        <h2>
+                            Our Product
+                        </h2>
+                        <div class="nav">
+                            <a href="./index.html" class="button">Home</a>
+                            <span>
+                                /
+                            </span>
+                            <a href="#" class="button">Product</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-default">
+            <div class="wrapper">
+                <div class="container">
+                    <nav class="sidenav">
+                      <div class="title">
+                        <h3>Our Product</h3>
+
+                      </div>
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <button onclick="showProduct('pc1')">Tococo Chips</button>
+                            </li>
+                            <li class="nav__item">
+                                <button onclick="showProduct('pc2')">Black Pepper</button>
+                            </li>
+                            <li class="nav__item">
+                                <button onclick="showProduct('pc3')">White Pepper</button>
+                            </li>
+                            <li class="nav__item">
+                                <button onclick="showProduct('pc4')">Nutmeg ABCD</button>
+                            </li>
+                            <li class="nav__item">
+                                <button onclick="showProduct('pc5')">Nutmeg SS</button>
+                            </li>
+                            <li class="nav__item">
+                                <button onclick="showProduct('pc6')">Nutmeg BWP</button>
+                            </li>
+                            <li class="nav__item">
+                                <button onclick="showProduct('pc7')">Alcoco</button>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="product-box">
+                        <div class="card pc1 active" id="productCard">
+                            <div class="img-container">
+                                <img
+                                    class="p1"
+                                    data-tilt="data-tilt"
+                                    data-tilt-reverse="true"
+                                    src="./images/products/tococo.png"
+                                    alt="">
+                            </div>
+                            <div class="text">
+                                <h3>Tococo Chips</h3>
+                                <p>Tococo Chips: Indonesia's Coconut Chips Pioneer, Made from Premium Handpicked
+                                    Coconuts with Flavors like Spicy, Balado, Chocolate, and Matcha.</p>
+                                <div class="desc">
+                                    <p>
+                                        Spesifications:
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <p>Non Msg</p>
+                                        </li>
+                                        <li>
+                                            <p>Non Pengawet</p>
+                                        </li>
+                                        <li>
+                                            <p>Expired 6 month</p>
+                                        </li>
+                                        <li>
+                                            <p>Price ex work : 14.000</p>
+                                        </li>
+                                        <li>
+                                            <p>Quantity : 2000 pcs/month</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card pc2" id="productCard">
+                            <div class="img-container">
+                                <img
+                                    class="p1"
+                                    data-tilt="data-tilt"
+                                    data-tilt-reverse="true"
+                                    src="./images/products/blackpepper.png"
+                                    alt="">
+                            </div>
+                            <div class="text">
+                                <h3>Black Pepper</h3>
+                                <p>Discover the Bold and Pungent Flavor of Our Premium Black Pepper, Perfect for
+                                    Elevating Dishes to New Culinary Heights.</p>
+                                <div class="desc">
+                                    <p>
+                                        Spesifications:
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <p>Stronger taste</p>
+                                        </li>
+                                        <li>
+                                            <p>Type: Pepper GL 500-550</p>
+                                        </li>
+                                        <li>
+                                            <p>Water content: 10-12%</p>
+                                        </li>
+                                        <li>
+                                            <p>Quantity: 70 tons</p>
+                                        </li>
+                                        <li>
+                                            <p>Price ex work: 84,000</p>
+                                        </li>
+                                        <li>
+                                            <p>suitable for tasteful food strong feeling</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card pc3" id="productCard">
+                            <div class="img-container">
+                                <img
+                                    class="p1"
+                                    data-tilt="data-tilt"
+                                    data-tilt-reverse="true"
+                                    src="./images/products/whitepepper.png"
+                                    alt="">
+                            </div>
+                            <div class="text">
+                                <h3>White Pepper</h3>
+                                <p>Discover the Bold and Pungent Flavor of Our Premium White Pepper, Perfect for
+                                    Elevating Dishes to New Culinary Heights.</p>
+                                <div class="desc">
+                                    <p>
+                                        Spesifications:
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <p>Type: Super Pepper and Mix Pepper</p>
+                                        </li>
+                                        <li>
+                                            <p>Water content: 10-12%</p>
+                                        </li>
+                                        <li>
+                                            <p>Quantity: 30 Tons</p>
+                                        </li>
+                                        <li>
+                                            <p>Price ex work: 102,000</p>
+                                        </li>
+                                        <li>
+                                            <p>Lighter taste</p>
+                                        </li>
+                                        <li>
+                                            <p>Suitable for food so as not to change color</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card pc4" id="productCard">
+                            <div class="img-container">
+                                <img
+                                    class="p1"
+                                    data-tilt="data-tilt"
+                                    data-tilt-reverse="true"
+                                    src="./images/products/palaabcd.webp"
+                                    alt="">
+                            </div>
+                            <div class="text">
+                                <h3>Nutmeg ABCD</h3>
+                                <p>Exquisie Nutmeg: Elevate Your Culinary Creations with Its Unique and Warm
+                                    Flavor Profile.</p>
+                                <div class="desc">
+                                    <p>
+                                        Spesifications:
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <p>Type ABCD</p>
+                                        </li>
+                                        <li>
+                                            <p>Whole Around</p>
+                                        </li>
+                                        <li>
+                                            <p>Not Broken</p>
+                                        </li>
+                                        <li>
+                                            <p>60-100 seeds in 1/2 kg</p>
+                                        </li>
+                                        <li>
+                                            <p>weight 5-8 grams per seed</p>
+                                        </li>
+                                        <li>
+                                            <p>water content 10-11℅</p>
+                                        </li>
+                                        <li>
+                                            <p>Price Ex work 150,000</p>
+                                        </li>
+                                        <li>
+                                            <p>Capacity 50-100 tons</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card pc5" id="productCard">
+                            <div class="img-container">
+                                <img
+                                    class="p1"
+                                    data-tilt="data-tilt"
+                                    data-tilt-reverse="true"
+                                    src="./images/products/palass.webp"
+                                    alt="">
+                            </div>
+                            <div class="text">
+                                <h3>Nutmeg Rimpel SS</h3>
+                                <p>Exquisie Nutmeg: Elevate Your Culinary Creations with Its Unique and Warm
+                                    Flavor Profile.</p>
+                                <div class="desc">
+                                    <p>
+                                        Spesifications:
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <p>Type SS</p>
+                                        </li>
+                                        <li>
+                                            <p>Not Whole Around</p>
+                                        </li>
+                                        <li>
+                                            <p>Not Broken</p>
+                                        </li>
+                                        <li>
+                                            <p>105-120 seeds in 1/2 kg</p>
+                                        </li>
+                                        <li>
+                                            <p>weight 4 grams per seed</p>
+                                        </li>
+                                        <li>
+                                            <p>water content +- 8 ℅</p>
+                                        </li>
+                                        <li>
+                                            <p>Price Ex work: 150,000</p>
+                                        </li>
+                                        <li>
+                                            <p>Capacity 50-100 tons</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card pc6" id="productCard">
+                            <div class="img-container">
+                                <img
+                                    class="p1"
+                                    data-tilt="data-tilt"
+                                    data-tilt-reverse="true"
+                                    src="./images/products/palabwp.webp"
+                                    alt="">
+                            </div>
+                            <div class="text">
+                                <h3>Nutmeg BWP</h3>
+                                <p>Exquisie Nutmeg: Elevate Your Culinary Creations with Its Unique and Warm
+                                    Flavor Profile.</p>
+                                <div class="desc">
+                                    <p>
+                                        Spesifications:
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <p>Type ABCD</p>
+                                        </li>
+                                        <li>
+                                            <p>Whole Around</p>
+                                        </li>
+                                        <li>
+                                            <p>Not Broken</p>
+                                        </li>
+                                        <li>
+                                            <p>+-120 seeds in 1/2 kg</p>
+                                        </li>
+                                        <li>
+                                            <p>weight &lt;4 grams per seed</p>
+                                        </li>
+                                        <li>
+                                            <p>water content 8-10℅</p>
+                                        </li>
+                                        <li>
+                                            <p>Price Ex work 120,000</p>
+                                        </li>
+                                        <li>
+                                            <p>Capacity 50-100 tons</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card pc7" id="productCard">
+                            <div class="img-container">
+                                <img
+                                    class="p1"
+                                    data-tilt="data-tilt"
+                                    data-tilt-reverse="true"
+                                    src="./images/products/alcoco.png"
+                                    alt="">
+                            </div>
+                            <div class="text">
+                                <h3>Alcoco</h3>
+                                <p>Pure and Pristine Coconut Cooking Oil for Unrivaled Flavor and Health
+                                    Benefits in Every Dish.</p>
+                                <div class="desc">
+                                    <p>
+                                        Spesifications:
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <p>Made from fresh coconut</p>
+                                        </li>
+                                        <li>
+                                            <p>Low cholesterol and clearer</p>
+                                        </li>
+                                        <li>
+                                            <p>Quantity: 20,000 liters/month</p>
+                                        </li>
+                                        <li>
+                                            <p>Ex work price: 40,000</p>
+                                        </li>
+                                        <li>
+                                            <p>Suitable for diets and does not stick on the product during frying</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col" id="company">
+                        <img src="images/logo.png" alt="logo" class="logo">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, ex!
+                        </p>
+                        <div class="social">
+                            <a href="#">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="col" id="products">
+                        <h3>Products</h3>
+                        <div class="links">
+                            <a href="#">TococoChips</a>
+                            <a href="#">Nutmeg</a>
+                            <a href="#">Pepper</a>
+                            <a href="#">Alcoco</a>
+                        </div>
+                    </div>
+
+                    <div class="col" id="useful-links">
+                        <h3>Links</h3>
+                        <div class="links">
+                            <a href="#">Products</a>
+                            <a href="#">About</a>
+                            <a href="#">Our Legality</a>
+                            <a href="#">Contact</a>
+                        </div>
+                    </div>
+
+                    <div class="col" id="contact">
+                        <h3>Contact</h3>
+                        <div class="contact-details">
+                            <i class="fa fa-location"></i>
+                            <p>Klapagading Rt 004/009, Wangon, Banyumas, Jawa Tengah</p>
+                        </div>
+                        <div class="contact-details">
+                            <i class="fa fa-phone"></i>
+                            <p>+62 895333230545</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="copy">
+                    <p class="copyright text-secondary text-center">
+                        Copyright &copy;
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+                        All rights reserved | Develop with ❤️
+                        <a class="text-primary" href="https://septiandwica.site">Septiandwica</a>
+                    </p>
+                </div>
+            </div>
+
+        </footer>
+        <button id="scrollToTopBtn">
+            <i class="fa fa-angle-up"></i>
+        </button>
+
+        <script src="vendor/swiper/js/swiper-bundle.min.js"></script>
+        <script src="vendor/vanila-tilt/vanilla-tilt.min.js"></script>
+
+        <script src="src/js/script.js"></script>
+
+    </body>
+
+</html>

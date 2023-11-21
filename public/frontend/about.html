@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet">
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"/>
+        <link rel="stylesheet" href="./src/css/style.css">
+        <link rel="stylesheet" href="./vendor/swiper/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="./vendor/font-awesome/css/all.min.css">
+
+        <title>Tococo</title>
+    </head>
+
+    <body>
+
+        <header class="header">
+            <div class="top-bar">
+                <div class="top-bar__content">
+                    <a href="https://wa.me/62895333230545" target="_blank" class="phone">
+                        <i class="fa-solid fa-phone icon"></i>
+                        <span>+62 8953 3323 0545</span>
+                    </a>
+                    <a
+                        href="mailto:pttococoindonesiaberkah@gmail.com"
+                        target="_blank"
+                        class="email">
+                        <i class="fa-solid fa-envelope icon"></i>
+                        <span>pttococoindonesiaberkah@gmail.com</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bottom-bar">
+                <div class="bottom-bar__content">
+                    <a href="./index.html" class="logo">
+                        <img class="logo__img" src="logo.svg" alt="logo">
+                        <span class="logo__text">Tococo</span>
+                    </a>
+
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">HOME</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">PRODUCT</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">ABOUT</a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="#">CONTACT</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="hamburger">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="jumbotron">
+            <div class="wrapper">
+                <div class="slide-hero">
+                    <img src="images/team/banner.heic" alt="" class="image"/>
+                    <div class="image-data">
+                        <h2>
+                            About Us
+                        </h2>
+                        <div class="nav">
+                            <a href="./index.html" class="button">Home</a>
+                            <span>
+                                /
+                            </span>
+                            <a href="#" class="button">About</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="page-default">
+            <div class="wrapper">
+                <div class="container">
+                    <nav class="sidenav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <button onclick="showProduct('pc1')">Profile</button>
+                            </li>
+                            <li class="nav__item">
+                                <button onclick="showProduct('pc2')">Vission & Mission</button>
+                            </li>
+                            <li class="nav__item">
+                                <button onclick="showProduct('pc3')">Our Team</button>
+                            </li>
+                            <li class="nav__item">
+                                <button onclick="showProduct('pc4')">Legality</button>
+                            </li>
+                            <li class="nav__item">
+                                <button onclick="showProduct('pc5')">Galery</button>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="about-box">
+                        <div class="card pc1" id="productCard">
+                            <div class="text">
+                                <p>Profile</p>
+
+                                <h3>PT TOCOCO INDONESIA BERKAH</h3>
+                                <div class="paragraph-box">
+                                    <div class="paragraph">
+                                        <img data-tilt="data-tilt" src="./images/team/comitment.jpg" alt="comitment">
+                                        <div class="desc">
+                                            <span>01.</span>
+                                            <span>
+                                                <h3>Commitment to Quality</h3>
+                                                <p>
+                                                    Our company is deeply entrenched in the agricultural sector, specializing in the
+                                                    production of premium Indonesian groceries, notably coconuts and spices.
+                                                    Embodying a commitment to excellence, we prioritize and meticulously maintain
+                                                    the quality of our products throughout the entire production process. From
+                                                    cultivation to processing, we work closely with local farmers, implementing
+                                                    sustainable and responsible farming practices. These efforts not only ensure the
+                                                    superior quality of our offerings but also contribute to the overall well-being
+                                                    of the environment.
+                                                </p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="paragraph">
+                                        <img data-tilt="data-tilt" src="./images/team/sustainable.jpg" alt="comitment">
+
+                                        <div class="desc">
+                                            <span>02.</span>
+                                            <span>
+                                                <h3>Sustainable Farming Practices</h3>
+                                                <p>
+                                                    At the core of our agricultural pursuits lies a dedication to sustainable and
+                                                    responsible farming practices. In the cultivation of coconuts, we adhere to
+                                                    stringent guidelines that prioritize optimal growth and development. Our
+                                                    collaboration with local farmers extends beyond conventional business
+                                                    partnerships; it represents a shared commitment to environmentally friendly
+                                                    practices. Through the use of organic fertilizers and sustainable water
+                                                    management, we not only guarantee the superior quality of our coconuts but also
+                                                    play a role in fostering a healthier ecosystem.
+                                                </p>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="paragraph">
+                                        <img data-tilt="data-tilt" src="./images/team/control.jpg" alt="">
+                                        <div class="desc">
+                                            <span>03.</span>
+                                            <span>
+                                                <h3>Quality Control and Community Engagement</h3>
+                                                <p>
+
+                                                    Our unwavering commitment to quality spans from cutting-edge processing
+                                                    facilities, where skilled professionals and advanced technology ensure the
+                                                    highest production standards, to stringent quality checks at every stage. Beyond
+                                                    production, we actively engage with the community by investing in education and
+                                                    training programs for local farmers. This holistic approach reflects our
+                                                    dedication to quality, sustainability, and community welfare, delivering
+                                                    products that epitomize Indonesian excellence.
+                                                </p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="card pc2" id="productCard">
+                            <div class="text">
+                                <p>Vission & Mission</p>
+
+                                <h3>PT TOCOCO INDONESIA BERKAH</h3>
+                                <div class="paragraph-box">
+                                    <div class="paragraph">
+                                        <img data-tilt="data-tilt" src="./images/team/comitment.jpg" alt="comitment">
+                                        <div class="desc">
+                                            <span>01.</span>
+                                            <span>
+                                                <h3>Vission</h3>
+                                                <p>
+                                                    To acquire Indonesian agricultural commodities to be known around the world
+                                                </p>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="paragraph">
+                                        <img data-tilt="data-tilt" src="./images/team/mission.avif" alt="comitment">
+
+                                        <div class="desc">
+                                            <span>02.</span>
+                                            <span>
+                                                <h3>Mission</h3>
+                                                <ul>
+                                                    <li>To produce truly globally quality agricultural products
+                                                    </li>
+                                                    <li>Meet the needs of agricultural products at the request of the buyer
+                                                    </li>
+                                                    <li>
+                                                        Empowering local farmers
+                                                    </li>
+                                                </ul>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="card pc3" id="productCard">
+                            <div class="text">
+                                <p>Our Team</p>
+                                <h3>PT TOCOCO INDONESIA BERKAH</h3>
+                                <div class="team">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="team-item">
+                                                <img src="./images/team/male.jpg" alt="team">
+                                                <h3>alfito yuro
+                                                    <span>Finance & Operasional</span></h3>
+                                            </div>
+                                            <div class="team-item">
+                                                <img src="./images/team/male.jpg" alt="team">
+                                                <h3>ilham satria
+                                                    <span>Content Creator</span></h3>
+                                            </div>
+                                            <div class="team-item">
+                                                <img src="./images/team/female.jpg" alt="team">
+                                                <h3>katrina Joe<span>Social Media Specialist</span></h3>
+                                            </div>
+                                            <div class="team-item">
+                                                <img src="./images/team/female.jpg" alt="team">
+                                                <h3>prilician Siauw
+                                                    <span>Digital Marketing</span></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card pc4" id="productCard">
+                            <div class="text">
+                                <p>Legality</p>
+
+                                <h3>PT TOCOCO INDONESIA BERKAH</h3>
+                                <div class="paragraph-box">
+                                    <div class="paragraph">
+                                        <img data-tilt="data-tilt" src="./images/legality/npwp.png" alt="comitment">
+                                        <div class="desc">
+                                            <span>01.</span>
+                                            <span>
+                                                <h3>NPWP</h3>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="paragraph">
+                                        <img data-tilt="data-tilt" src="./images/legality/NIB.png" alt="comitment">
+
+                                        <div class="desc">
+                                            <span>02.</span>
+                                            <span>
+                                                <h3>NIB</h3>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="card pc5" id="productCard">
+                            <div class="text">
+                                <p>Galery</p>
+
+                                <h3>PT TOCOCO INDONESIA BERKAH</h3>
+                                <div class="galery-box">
+                                    <div class="img-container">
+                                        <div class="img">
+                                            <img src="./images/team/banner.heic" alt="">
+                                        </div>
+                                        <div class="img">
+                                            <img src="./images/products/palaabcd.webp" alt="">
+                                        </div>
+                                        <div class="img">
+                                            <img src="./images/products/palabwp.webp" alt="">
+                                        </div>
+                                        <div class="img">
+                                            <img src="./images/team/sustainable.jpg" alt="">
+                                        </div>
+                                        <div class="img">
+                                            <img src="./images/team/control.jpg" alt="">
+                                        </div>
+                                        <div class="img">
+                                            <img src="./images/products/palass.webp" alt="">
+                                        </div>
+                                        <div class="img">
+                                            <img src="./images/products/palass.webp" alt="">
+                                        </div>
+                                        <div class="img">
+                                            <img src="./images/products/palass.webp" alt="">
+                                        </div>
+                                        
+
+                                    </div>
+                                    <div class="img-pop">
+                                        <span>&times;</span>
+                                        <img src="./images/team/banner.heic" alt="">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col" id="company">
+                        <img src="images/logo.png" alt="logo" class="logo">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, ex!
+                        </p>
+                        <div class="social">
+                            <a href="#">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <div class="col" id="products">
+                        <h3>Products</h3>
+                        <div class="links">
+                            <a href="#">TococoChips</a>
+                            <a href="#">Nutmeg</a>
+                            <a href="#">Pepper</a>
+                            <a href="#">Alcoco</a>
+                        </div>
+                    </div>
+
+                    <div class="col" id="useful-links">
+                        <h3>Links</h3>
+                        <div class="links">
+                            <a href="#">Products</a>
+                            <a href="#">About</a>
+                            <a href="#">Our Legality</a>
+                            <a href="#">Contact</a>
+                        </div>
+                    </div>
+
+                    <div class="col" id="contact">
+                        <h3>Contact</h3>
+                        <div class="contact-details">
+                            <i class="fa fa-location"></i>
+                            <p>Klapagading Rt 004/009, Wangon, Banyumas, Jawa Tengah</p>
+                        </div>
+                        <div class="contact-details">
+                            <i class="fa fa-phone"></i>
+                            <p>+62 895333230545</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="copy">
+                    <p class="copyright text-secondary text-center">
+                        Copyright &copy;
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+                        All rights reserved | Develop with ❤️
+                        <a class="text-primary" href="https://septiandwica.site">Septiandwica</a>
+                    </p>
+                </div>
+            </div>
+
+        </footer>
+        <button id="scrollToTopBtn">
+            <i class="fa fa-angle-up"></i>
+        </button>
+
+        <script src="vendor/swiper/js/swiper-bundle.min.js"></script>
+        <script src="vendor/vanila-tilt/vanilla-tilt.min.js"></script>
+
+        <script src="src/js/script.js"></script>
+
+    </body>
+
+</html>
