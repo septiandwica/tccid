@@ -6,35 +6,35 @@
             <div class="wrapper swiper-wrapper">
             <div class="slide swiper-slide">
                 <img src="{{ asset('frontend/images/team/banner.heic') }}" alt="" class="image" />
-                <div class="image-data">
-                    <span class="text">{{ __('swiper-text2') }}</span>
-                    <h2>
+                <div class="image-data" >
+                    <span class="text" data-aos="fade-right" data-aos-duration="700">{{ __('swiper-text2') }}</span>
+                    <h2 data-aos="fade-left" data-aos-duration="700">
                     {{ __('swiper-tl2.1') }}<br />
                     {{ __('swiper-tl2.2') }}
                     </h2>
-                    <a href="{{ route('product') }}" class="button">{{ __('swiper-btn2') }}</a>
+                    <a data-aos="fade-right" data-aos-duration="700"href="{{ route('product') }}" class="button">{{ __('swiper-btn2') }}</a>
                 </div>
               </div>
               <div class="slide swiper-slide">
                 <img src="{{ asset('frontend/images/img1.jpg') }}" alt="" class="image" />
                 <div class="image-data">
-                  <span class="text">{{ __('swiper-text1') }}</span>
-                  <h2>
+                  <span class="text"data-aos="fade-right" data-aos-duration="700">{{ __('swiper-text1') }}</span>
+                  <h2 data-aos="fade-left" data-aos-duration="700"">
                   {{ __('swiper-tl1.1') }} <br />
                   {{ __('swiper-tl1.2') }}
                   </h2>
-                  <a href="{{ route('product') }}" class="button">{{ __('swiper-btn') }}</a>
+                  <a data-aos="fade-right" data-aos-duration="700" href="{{ route('product') }}" class="button">{{ __('swiper-btn') }}</a>
                 </div>
               </div>
               <div class="slide swiper-slide">
-                <img src="{{ asset('frontend/images/img1.jpg') }}" alt="" class="image" />
+                <img src="{{ asset('frontend/images/products/alcoco(1).webp') }}" alt="" class="image" />
                 <div class="image-data">
-                    <span class="text">{{ __('swiper-text3') }}</span>
-                    <h2>
+                    <span class="text" data-aos="fade-right" data-aos-duration="700">{{ __('swiper-text3') }}</span>
+                    <h2 data-aos="fade-left" data-aos-duration="700">
                     {{ __('swiper-tl3.1') }}<br />
                     {{ __('swiper-tl3.2') }}
                     </h2>
-                    <a href="{{ route('product') }}" class="button">{{ __('swiper-btn3') }}</a>
+                    <a data-aos="fade-right" data-aos-duration="700" href="{{ route('product') }}" class="button">{{ __('swiper-btn3') }}</a>
                 </div>
               </div>
             </div>
@@ -46,7 +46,8 @@
 
 <section class="highlight">
     <div class="wrapper">
-        <div
+        <div data-aos="fade-up"
+        data-aos-duration="700"
             class="box"
             data-tilt="data-tilt"
             data-tilt-glare="data-tilt-glare"
@@ -58,6 +59,8 @@
             </div>
         </div>
         <div
+        data-aos="fade-down"
+        data-aos-duration="700"
             class="box"
             data-tilt="data-tilt"
             data-tilt-glare="data-tilt-glare"
@@ -69,6 +72,8 @@
             </div>
        </div>
        <div
+       data-aos="fade-up"
+       data-aos-duration="700"
             class="box"
             data-tilt="data-tilt"
             data-tilt-glare="data-tilt-glare"
@@ -85,16 +90,19 @@
 <section class="products">
             <div class="wrapper">
                 <div class="title">
-                    <h2>{{ __('pg-product-tit') }}</h2>
-                    <div class="hline"></div>
-                    {{ __('pg-product-tit-desc') }}
-                    <p>
-                        
+                    <h2 data-aos="flip-left"
+       data-aos-duration="200">{{ __('pg-product-tit') }}</h2>
+                    <div class="hline" data-aos="fade-up"
+       data-aos-duration="200"></div>
+                    
+                    <p data-aos="fade-right"
+       data-aos-duration="200">
+                        {{ __('pg-product-tit-desc') }}
                     </p>
                 </div>
                 <div class="container">
                     <div class="left">
-                        <div class="card" id="productCard" >
+                        <div class="card" data-aos="fade-left" data-aos-duration="500" id="productCard" >
                             <div class="text">
                                 <h3>{{ __('prod-tit1') }}</h3>
                                 <p>{{ __('prod-desc1') }}</p>
@@ -115,7 +123,7 @@
                             </div>
                         </div>
                         <div class="hline2"></div>
-                        <div class="card" id="productCard" >
+                        <div class="card" data-aos="fade-left" data-aos-duration="500" id="productCard" >
                             <div class="text">
                                 <h3>{{ __('prod-tit2') }}</h3>
                                 <p>{{ __('prod-desc2') }}</p>
@@ -138,7 +146,7 @@
                     </div>
                     <div class="vline"></div>
                     <div class="right">
-                        <div class="card" id="productCard">
+                        <div class="card" data-aos="fade-right" data-aos-duration="500" id="productCard">
                             <div class="text">
                                 <h3>{{ __('prod-tit3') }}</h3>
                                 <p>{{ __('prod-desc3') }}</p>
@@ -160,7 +168,7 @@
                         </div>
                         <div class="hline2"></div>
 
-                        <div class="card" id="productCard" >
+                        <div class="card" data-aos="fade-right" data-aos-duration="500" id="productCard" >
                             <div class="text">
                                 <h3>{{ __('prod-tit4') }}</h3>
                                 <p>{{ __('prod-desc4') }}</p>
@@ -191,7 +199,7 @@
         <section class="about">
             <div class="wrapper">
                 <div class="top">
-                    <div class="title">
+                    <div class="title" data-aos="fade-down" data-aos-duration="500">
                         <p>{{ __('pg-about-tag') }}</p>
                         <h2>{{ __('pg-about-tit') }}</h2>
                         <div class="hline"></div>
@@ -199,14 +207,14 @@
                         <p>{{ __('pg-about-tit-desc') }}</p>
                     </div>
                     <div class="container">
-                        <div class="img-container">
+                        <div data-aos="fade-right" data-aos-duration="500" class="img-container">
                             <img
                                 data-tilt="data-tilt"
                                 data-tilt-reverse="true"
                                 src="{{ asset('frontend/images/company/tococoindonesiaberkah.jpg') }}"
                                 alt="">
                         </div>
-                        <div class="text-container">
+                        <div data-aos="fade-left" data-aos-duration="500" class="text-container">
                             <p>{{ __('pg-about-text-desc') }}</p>
                             <a href="{{ route('about') }}">{{ __('read-btn') }}
                                 <i class="fa fa-chevron-right"></i>
@@ -215,12 +223,12 @@
                     </div>
                 </div>
                 <div class="bottom">
-                    <div class="title">
+                    <div data-aos="fade-up" data-aos-duration="500" class="title">
                         <p>{{ __('pg-about-tag2') }}</p>
                         <h2>{{ __('pg-about-tit2') }}</h2>
                         <div class="hline"></div>
                     </div>
-                    <div class="container">
+                    <div data-aos="fade-down" data-aos-duration="500" class="container">
                       <nav class="nav">
                         <ul class="nav__list">
                             <li class="nav__item">
@@ -233,7 +241,7 @@
                       </nav>
                       <div class="document">
                           <div class="img-container">
-                            <img
+                            <img data-aos="fade-down" data-aos-duration="500"
                                 id="npwpImage"
                                 data-tilt="data-tilt"
                                 data-tilt-reverse="true"
@@ -241,6 +249,7 @@
                                 alt=""
                                 width="400px">
                             <img
+                            data-aos="fade-down" data-aos-duration="500"
                                 id="nibImage"
                                 data-tilt="data-tilt"
                                 data-tilt-reverse="true"
@@ -253,6 +262,7 @@
                 </div>
             </div>
         </section>
+
 
         <script>
 document.addEventListener("DOMContentLoaded", function () {

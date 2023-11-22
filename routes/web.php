@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\FrontEndController;
 use App\Http\Controllers\ContactController;
+
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Session;
 
@@ -21,10 +22,14 @@ Route::get('locale/{locale}', function($locale){
     return redirect() -> back();
 });
 
+
+Route::middleware(['hideSendRoute'])->get('/send', [FrontEndController::class, 'send'])->name('send');
+
 Route::get('about', [FrontEndController::class, 'about'])->name('about');
 Route::get('index', [FrontEndController::class, 'index'])->name('home');
 Route::get('product', [FrontEndController::class, 'product'])->name('product');
 Route::get('contact', [FrontEndController::class, 'contact'])->name('contact');
+
 
 Route::view('/contact', 'contact')->name('contact');
 Route::post('/send', [ContactController::class, 'send'])->name('send.email');

@@ -24,6 +24,11 @@ class FrontEndController extends Controller
         //
         return view('about');
     }
+    public function send()
+    {
+        //
+        return view('contact');
+    }
    
     /**
      * Show the form for creating a new resource.

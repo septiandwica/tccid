@@ -5,11 +5,11 @@
             <div class="wrapper">
                 <div class="slide-hero">
                     <img src="{{ asset('frontend/images/img1.jpg') }}" alt="" class="image"/>
-                    <div class="image-data">
-                        <h2>
+                    <div  class="image-data">
+                        <h2 data-aos="fade-down" data-aos-duration="700">
                         {{ __('pg-product-title') }}
                         </h2>
-                        <div class="nav">
+                        <div class="nav" data-aos="fade-left" data-aos-duration="700">
                             <a href="{{ route('index') }}" class="button">{{ __('fot-home') }}</a>
                             <span>
                                 /
@@ -26,11 +26,11 @@
             <div class="wrapper">
                 <div class="container">
                     <nav class="sidenav">
-                      <div class="title">
+                      <div class="title" data-aos="fade-right" data-aos-duration="200">
                         <h3>{{ __('pg-product-title') }}</h3>
 
                       </div>
-                        <ul class="nav__list">
+                        <ul class="nav__list" data-aos="fade-down" data-aos-duration="900">
                             <li class="nav__item">
                                 <button onclick="showProduct('pc1')">{{ __('prod-tit1') }}</button>
                             </li>
@@ -54,7 +54,7 @@
                             </li>
                         </ul>
                     </nav>
-                    <div class="product-box">
+                    <div class="product-box" data-aos="fade-up" data-aos-duration="900">
                         <div class="card pc1 active" id="pc1">
                             <div class="img-container">
                                 <img
@@ -92,7 +92,7 @@
                             </div>
 
                         </div>
-                        <div class="card pc2" id="pc2">
+                        <div class="card pc2" id="pc2" >
                             <div class="img-container">
                                 <img
                                     class="p1"
@@ -132,7 +132,7 @@
                             </div>
 
                         </div>
-                        <div class="card pc3" id="pc3">
+                        <div class="card pc3" id="pc3" data-aos="zoom-in-up" data-aos-duration="600">
                             <div class="img-container">
                                 <img
                                     class="p1"

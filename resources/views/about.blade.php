@@ -2,14 +2,14 @@
 
 @section('content')
 <section class="jumbotron">
-            <div class="wrapper">
+<div class="wrapper">
                 <div class="slide-hero">
                     <img src="{{ asset('frontend/images/team/banner.heic') }}" alt="" class="image"/>
                     <div class="image-data">
-                        <h2>
+                        <h2 data-aos="fade-up" data-aos-duration="700">
                         {{ __('pg-about-title') }}
                         </h2>
-                        <div class="nav">
+                        <div class="nav" data-aos="fade-up" data-aos-duration="700">
                             <a href="{{ route('index') }}" class="button">{{ __('fot-home') }}</a>
                             <span>
                                 /
@@ -22,11 +22,11 @@
             </div>
         </section>
 
-        <section class="page-default">
+        <section class="page-default" >
             <div class="wrapper">
-                <div class="container">
+                <div class="container" >
                     <nav class="sidenav">
-                        <ul class="nav__list">
+                        <ul class="nav__list" data-aos="fade-up" data-aos-duration="900">
                             <li class="nav__item">
                                 <button onclick="showProduct('pc1')">{{ __('pg-about-nav1') }}</button>
                             </li>
@@ -44,7 +44,7 @@
                             </li>
                         </ul>
                     </nav>
-                    <div class="about-box">
+                    <div class="about-box" >
                         <div class="card pc1" id="productCard">
                             <div class="text">
                                 <p>{{ __('pg-about-nav1') }}</p>
@@ -224,10 +224,7 @@
                                         </div>
                                         <div class="img">
                                             <img src="{{ asset('frontend/images/products/alcoco(2).webp') }}" alt="">
-                                        </div>
-                                        <div class="img">
-                                            <img src="{{ asset('frontend/images/products/palass.webp') }}" alt="">
-                                        </div>
+                                        </div> 
 
                                     </div>
                                     <div class="img-pop">

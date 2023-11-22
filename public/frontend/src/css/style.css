@@ -1,5 +1,6 @@
 /* RESET */
 * {
+  
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -29,6 +30,7 @@
 	border-radius: 10px;
 
 }
+
   
   ul {
     list-style: none;
@@ -49,7 +51,7 @@
   /* NORMAL STYLES */
   header.header {
     width: 100%;
-    z-index: 2000;
+    z-index: 1500;
     position: fixed;
   }
 
@@ -960,7 +962,7 @@ footer .col{
   padding:0 2rem;
 }
 footer .col .logo{
-  width: 100px;
+  width: 180px;
   margin-bottom:25px;
 }
 footer .col h3{
@@ -1513,7 +1515,6 @@ section.page-default .card.pc3 .team-item .social-links a:hover{
    }	
 }
 
-
 section.page-default .card.pc5 .galery-box .img-container{
   display: flex;
   flex-wrap: wrap;
@@ -1559,6 +1560,7 @@ section.page-default .card.pc5 .img-pop span{
   color: white;
   cursor: pointer;
 }
+
 section.page-default .card.pc5 .img-pop img{
   position: absolute;
   z-index: 3000;
