@@ -236,6 +236,7 @@
 
         <script src="{{ asset('frontend/vendor/swiper/js/swiper-bundle.min.js') }}"></script>
         <script src="{{ asset('frontend/vendor/vanila-tilt/vanilla-tilt.min.js') }}"></script>
+        <script src="{{ asset('frontend/vendor/sweetalert/sweetalert.all.min.js') }}"></script>
         <script src="{{ asset('frontend/vendor/aos/aos.js') }}"></script>
         <script src="{{ asset('frontend/src/js/script.js') }}"></script>
     </body>

@@ -17,7 +17,7 @@ class ContactController extends Controller
 
         if ($this->isOnline()) {
             $mail_data = [
-                'recipient' => 'septiandwica03@gmail.com',
+                'recipient' => 'pttococoindonesiaberkah@gmail.com',
                 'fromEmail' => $request->email,
                 'fromName' => $request->name, 
                 'subject' => $request->subject,

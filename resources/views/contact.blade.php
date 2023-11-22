@@ -32,27 +32,29 @@
                     <p>{{__('pg-contact-right2')}}
                     </p>
                     <form action="{{ route('send.email')}}" method="POST">
-                        @csrf
-                        @if (Session::has('error'))
-    <script>
-        Swal.fire({
-            icon: 'error',
-            title: 'Error',
-            text: '{{ Session::get("error") }}',
-        });
-    </script>
-@endif
+                    @csrf
+                    @if (Session::has('error'))
+                    <script src="{{ asset('frontend/vendor/sweetalert/sweetalert.all.min.js') }}"></script>
+                    <script>
+                        Swal.fire({
+                        icon: 'error',
+                        title: 'Error',
+                        text: '{{ Session::get("error") }}',
+                        });
+                    </script>
+                    @endif
 
-@if (Session::has('success'))
-    <script>
-        Swal.fire({
-            icon: 'success',
-            title: 'Success',
-            text: '{{ Session::get("success") }}',
-        });
-    </script>
-@endif
-                        <div class="input-box">
+                    @if (Session::has('success'))
+                    <script src="{{ asset('frontend/vendor/sweetalert/sweetalert.all.min.js') }}"></script>
+                    <script>
+                        Swal.fire({
+                        icon: 'success',
+                        title: 'Success',
+                        text: '{{ Session::get("success") }}',
+                        });
+                    </script>
+                    @endif
+                    <div class="input-box">
                             <input
                                 class="form-control"
                                 name="name"
