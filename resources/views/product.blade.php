@@ -6,10 +6,10 @@
                 <div class="slide-hero">
                     <img src="{{ asset('frontend/images/img1.jpg') }}" alt="" class="image"/>
                     <div  class="image-data">
-                        <h2 data-aos="fade-down" data-aos-duration="700">
+                        <h2  data-aos="fade-down">
                         {{ __('pg-product-title') }}
                         </h2>
-                        <div class="nav" data-aos="fade-left" data-aos-duration="700">
+                        <div class="nav"  data-aos="fade-right">
                             <a href="{{ route('index') }}" class="button">{{ __('fot-home') }}</a>
                             <span>
                                 /
@@ -26,41 +26,40 @@
             <div class="wrapper">
                 <div class="container">
                     <nav class="sidenav">
-                      <div class="title" data-aos="fade-right" data-aos-duration="200">
+                      <div class="title" data-aos="fade-right">
                         <h3>{{ __('pg-product-title') }}</h3>
 
                       </div>
-                        <ul class="nav__list" data-aos="fade-down" data-aos-duration="900">
-                            <li class="nav__item">
+                        <ul class="nav__list" >
+                            <li data-aos="fade-left" data-aos-duration="500"  class="nav__item">
                                 <button onclick="showProduct('pc1')">{{ __('prod-tit1') }}</button>
                             </li>
-                            <li class="nav__item">
+                            <li data-aos="fade-right" data-aos-duration="700"  class="nav__item">
                                 <button onclick="showProduct('pc2')">{{ __('prod-tit2.1') }}</button>
                             </li>
-                            <li class="nav__item">
+                            <li data-aos="fade-left" data-aos-duration="900"  class="nav__item">
                                 <button onclick="showProduct('pc3')">{{ __('prod-tit2.2') }}</button>
                             </li>
-                            <li class="nav__item">
+                            <li data-aos="fade-right" data-aos-duration="1100"  class="nav__item">
                                 <button onclick="showProduct('pc4')">{{ __('prod-tit3.1') }}</button>
                             </li>
-                            <li class="nav__item">
+                            <li data-aos="fade-left" data-aos-duration="1300"  class="nav__item">
                                 <button onclick="showProduct('pc5')">{{ __('prod-tit3.2') }}</button>
                             </li>
-                            <li class="nav__item">
+                            <li data-aos="fade-right" data-aos-duration="1500"  class="nav__item">
                                 <button onclick="showProduct('pc6')">{{ __('prod-tit3.3') }}</button>
                             </li>
-                            <li class="nav__item">
+                            <li data-aos="fade-left" data-aos-duration="1700"  class="nav__item">
                                 <button onclick="showProduct('pc7')">{{ __('prod-tit4') }}</button>
                             </li>
                         </ul>
                     </nav>
-                    <div class="product-box" data-aos="fade-up" data-aos-duration="900">
+                    <div class="product-box" data-aos="fade-up" data-aos-duration="1000" >
                         <div class="card pc1 active" id="pc1">
                             <div class="img-container">
                                 <img
                                     class="p1"
-                                    data-tilt="data-tilt"
-                                    data-tilt-reverse="true"
+                                    data-tilt data-tilt-glare data-tilt-max-glare="0.8"
                                     src="{{ asset('frontend/images/products/tococo.png') }}"
                                     alt="">
                             </div>
@@ -96,8 +95,7 @@
                             <div class="img-container">
                                 <img
                                     class="p1"
-                                    data-tilt="data-tilt"
-                                    data-tilt-reverse="true"
+                                    data-tilt data-tilt-glare data-tilt-max-glare="0.8"
                                     src="{{ asset('frontend/images/products/blackpepper.png') }}"
                                     alt="">
                             </div>
@@ -136,8 +134,7 @@
                             <div class="img-container">
                                 <img
                                     class="p1"
-                                    data-tilt="data-tilt"
-                                    data-tilt-reverse="true"
+                                    data-tilt data-tilt-glare data-tilt-max-glare="0.8"
                                     src="{{ asset('frontend/images/products/whitepepper.png') }}"
                                     alt="">
                             </div>
@@ -176,8 +173,7 @@
                             <div class="img-container">
                                 <img
                                     class="p1"
-                                    data-tilt="data-tilt"
-                                    data-tilt-reverse="true"
+                                    data-tilt data-tilt-glare data-tilt-max-glare="0.8"
                                     src="{{ asset('frontend/images/products/palaabcd.webp') }}"
                                     alt="">
                             </div>
@@ -222,8 +218,7 @@
                             <div class="img-container">
                                 <img
                                     class="p1"
-                                    data-tilt="data-tilt"
-                                    data-tilt-reverse="true"
+                                    data-tilt data-tilt-glare data-tilt-max-glare="0.8"
                                     src="{{ asset('frontend/images/products/palass.webp') }}"
                                     alt="">
                             </div>
@@ -268,8 +263,7 @@
                             <div class="img-container">
                                 <img
                                     class="p1"
-                                    data-tilt="data-tilt"
-                                    data-tilt-reverse="true"
+                                    data-tilt data-tilt-glare data-tilt-max-glare="0.8"
                                     src="{{ asset('frontend/images/products/palabwp.webp') }}"
                                     alt="">
                             </div>
@@ -314,8 +308,7 @@
                             <div class="img-container">
                                 <img
                                     class="p2"
-                                    data-tilt="data-tilt"
-                                    data-tilt-reverse="true"
+                                    data-tilt data-tilt-glare data-tilt-max-glare="0.8"
                                     src="{{ asset('frontend/images/products/alcoco.png') }}"
                                     width="150px"
                                     alt="">

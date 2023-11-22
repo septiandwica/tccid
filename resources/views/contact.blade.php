@@ -7,10 +7,10 @@
                 alt=""
                 class="image"/>
             <div class="image-data">
-                <h2 data-aos="fade-down" data-aos-duration="700">
+                <h2 data-aos="fade-up" >
                     {{__('pg-contact-title')}}
                 </h2>
-                <div class="nav"data-aos="fade-left" data-aos-duration="700">
+                <div class="nav" data-aos="fade-right" >
                     <a href="{{ route('index') }}" class="button">{{__('fot-home')}}</a>
                     <span>
                         /
@@ -25,7 +25,7 @@
 
 <section class="page-default">
     <div class="wrapper">
-        <div class="container-contact" data-aos="fade-up" data-aos-duration="800">
+        <div class="container-contact" data-aos="fade-down" data-aos-duration="700" >
             <div class="content">
                 <div class="right-side">
                     <div class="topic-text">{{__('pg-contact-right1')}}</div>
@@ -33,6 +33,25 @@
                     </p>
                     <form action="{{ route('send.email')}}" method="POST">
                         @csrf
+                        @if (Session::has('error'))
+    <script>
+        Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: '{{ Session::get("error") }}',
+        });
+    </script>
+@endif
+
+@if (Session::has('success'))
+    <script>
+        Swal.fire({
+            icon: 'success',
+            title: 'Success',
+            text: '{{ Session::get("success") }}',
+        });
+    </script>
+@endif
                         <div class="input-box">
                             <input
                                 class="form-control"
@@ -41,7 +60,8 @@
                                 placeholder="Enter your name"
                                 value="{{ old('name')}}">
                             @error('name')
-                            <span class="error" style="color: red;  padding:10px 0px 10px 0px;">{{__('message')}}</span>@enderror
+                            <span class="error" style="color: red;  padding:10px 0px 10px 0px;">{{__('message')}}</span>
+                            @enderror
                         </div>
                         <div class="input-box">
                             <input
@@ -84,18 +104,18 @@
         </div>
         <div class="contact-content">
             <div class="contact-box">
-                <div class="address details contact-card" data-aos="fade-up" data-aos-duration="700">
+                <div class="address details contact-card"data-aos="fade-up" data-aos-duration="500" >
                     <i class="fas fa-location"></i>
                     <div class="topic">{{__('pg-contact-left1')}}</div>
                     <div class="text-one">Klapagading, Wangon, Banyumas</div>
                     <div class="text-two">Jawa Tengah, ID</div>
                 </div>
-                <div class="phone details  contact-card" data-aos="fade-up" data-aos-duration="700">
+                <div class="phone details  contact-card" data-aos="fade-down" data-aos-duration="700"  >
                     <i class="fas fa-phone-alt"></i>
                     <div class="topic">{{__('pg-contact-left2')}}</div>
                     <div class="text-one">+62 8953 3323 0545</div>
                 </div>
-                <div class="email details  contact-card" data-aos="fade-up" data-aos-duration="700">
+                <div class="email details  contact-card" data-aos="fade-up" data-aos-duration="900" >
                     <i class="fas fa-envelope"></i>
                     <div class="topic">{{__('pg-contact-left3')}}</div>
                     <div class="text-one">pttococoindonesiaberkah@gmail.com</div>

@@ -43,6 +43,8 @@ function showImage(imageId) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
+AOS.init();
+
   var scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
   // When the user scrolls down 20px from the top of the document, show the button
@@ -60,5 +62,3 @@ document.addEventListener("DOMContentLoaded", function () {
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
   });
 });
-
-AOS.init();

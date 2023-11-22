@@ -6,10 +6,10 @@
                 <div class="slide-hero">
                     <img src="{{ asset('frontend/images/team/banner.heic') }}" alt="" class="image"/>
                     <div class="image-data">
-                        <h2 data-aos="fade-up" data-aos-duration="700">
+                        <h2  data-aos="fade-down" >
                         {{ __('pg-about-title') }}
                         </h2>
-                        <div class="nav" data-aos="fade-up" data-aos-duration="700">
+                        <div class="nav"  data-aos="fade-right" >
                             <a href="{{ route('index') }}" class="button">{{ __('fot-home') }}</a>
                             <span>
                                 /
@@ -25,26 +25,26 @@
         <section class="page-default" >
             <div class="wrapper">
                 <div class="container" >
-                    <nav class="sidenav">
-                        <ul class="nav__list" data-aos="fade-up" data-aos-duration="900">
-                            <li class="nav__item">
+                    <nav class="sidenav" >
+                        <ul class="nav__list" >
+                            <li  data-aos="fade-left" data-aos-duration="500" class="nav__item">
                                 <button onclick="showProduct('pc1')">{{ __('pg-about-nav1') }}</button>
                             </li>
-                            <li class="nav__item">
+                            <li  data-aos="fade-right" data-aos-duration="700" class="nav__item">
                                 <button onclick="showProduct('pc2')">{{ __('pg-about-nav2') }}</button>
                             </li>
-                            <li class="nav__item">
+                            <li  data-aos="fade-left" data-aos-duration="900" class="nav__item">
                                 <button onclick="showProduct('pc3')">{{ __('pg-about-nav3') }}</button>
                             </li>
-                            <li class="nav__item">
+                            <li  data-aos="fade-right" data-aos-duration="1100" class="nav__item">
                                 <button onclick="showProduct('pc4')">{{ __('pg-about-nav4') }}</button>
                             </li>
-                            <li class="nav__item">
+                            <li  data-aos="fade-left" data-aos-duration="1200" class="nav__item">
                                 <button onclick="showProduct('pc5')">{{ __('pg-about-nav5') }}</button>
                             </li>
                         </ul>
                     </nav>
-                    <div class="about-box" >
+                    <div class="about-box" data-aos="fade-up" data-aos-duration="1000" >
                         <div class="card pc1" id="productCard">
                             <div class="text">
                                 <p>{{ __('pg-about-nav1') }}</p>
