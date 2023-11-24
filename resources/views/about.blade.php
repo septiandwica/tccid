@@ -36,15 +36,18 @@
                             <li  data-aos="fade-left" data-aos-duration="900" class="nav__item">
                                 <button onclick="showProduct('pc3')">{{ __('pg-about-nav3') }}</button>
                             </li>
-                            <li  data-aos="fade-right" data-aos-duration="1100" class="nav__item">
+                            <li  data-aos="fade-left" data-aos-duration="900" class="nav__item">
                                 <button onclick="showProduct('pc4')">{{ __('pg-about-nav4') }}</button>
                             </li>
-                            <li  data-aos="fade-left" data-aos-duration="1200" class="nav__item">
+                            <li  data-aos="fade-right" data-aos-duration="1100" class="nav__item">
                                 <button onclick="showProduct('pc5')">{{ __('pg-about-nav5') }}</button>
+                            </li>
+                            <li  data-aos="fade-left" data-aos-duration="1200" class="nav__item">
+                                <button onclick="showProduct('pc6')">{{ __('pg-about-nav6') }}</button>
                             </li>
                         </ul>
                     </nav>
-                    <div class="about-box" data-aos="fade-up" data-aos-duration="1000" >
+                    <div class="about-box">
                         <div class="card pc1" id="productCard">
                             <div class="text">
                                 <p>{{ __('pg-about-nav1') }}</p>
@@ -197,6 +200,34 @@
                         <div class="card pc5" id="productCard">
                             <div class="text">
                                 <p>{{__('pg-about-nav5')}}</p>
+
+                                <h3>PT TOCOCO INDONESIA BERKAH</h3>
+                                <div class="paragraph-box">
+                                    <div class="paragraph">
+                                        <img data-tilt="data-tilt" src="{{ asset('frontend/images/legality/npwp.png') }}" alt="comitment">
+                                        <div class="desc">
+                                            <span>
+                                                <h3></h3>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="paragraph">
+                                        <img data-tilt="data-tilt" src="{{ asset('frontend/images/legality/NIB.png') }}" alt="comitment">
+
+                                        <div class="desc">
+                                            <span>02.</span>
+                                            <span>
+                                                <h3>NIB</h3>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="card pc6" id="productCard">
+                            <div class="text">
+                                <p>{{__('pg-about-nav6')}}</p>
 
                                 <h3>PT TOCOCO INDONESIA BERKAH</h3>
                                 <div class="galery-box">

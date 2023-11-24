@@ -17,7 +17,7 @@ class ContactController extends Controller
 
         if ($this->isOnline()) {
             $mail_data = [
-                'recipient' => 'pttococoindonesiaberkah@gmail.com',
+                'recipient' => 'septiandwica03@gmail.com',
                 'fromEmail' => $request->email,
                 'fromName' => $request->name, 
                 'subject' => $request->subject,
@@ -38,7 +38,6 @@ class ContactController extends Controller
     }
 
    
-
 
     public function isOnline($site = "https://youtube.com/") {
         if(@fopen($site, "r")){

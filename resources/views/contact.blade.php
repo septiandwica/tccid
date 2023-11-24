@@ -6,7 +6,7 @@
                 src="{{ asset('frontend/images/team/banner.heic') }}"
                 alt=""
                 class="image"/>
-            <div class="image-data">
+            <div class="image-data"> 
                 <h2 data-aos="fade-up" >
                     {{__('pg-contact-title')}}
                 </h2>
@@ -17,7 +17,6 @@
                     </span>
                     <a href="{{ route('contact') }}" class="button">{{__('fot-contact')}}</a>
                 </div>
-
             </div>
         </div>
     </div>
