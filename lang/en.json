@@ -8,6 +8,9 @@
     "nav-id": "ID",
     "message": "This field is required.",
     "read-btn" : "Read More",
+    "vid-btn" : "Watch Profile",
+    "btn-loadmore": "Load More",
+    "btn-less": "Less",
     "products" : "Products",
     "links" : "Links",
     "fot-home":"Home",
@@ -139,6 +142,8 @@
     "pg-about-nav3":"Our Team",
     "pg-about-nav4":"Legality",
     "pg-about-nav5":"Galery",
+    "pg-ach-tit" : "Achievement",
+    "pg-ach-tit-desc" : "Outstanding achievements, honored for dedication and excellence on our journey",
 
     "pg-contact-title":"Contact Us",
     "pg-contact-left1":"Address",

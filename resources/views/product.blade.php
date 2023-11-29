@@ -4,7 +4,7 @@
 <section class="jumbotron">
             <div class="wrapper">
                 <div class="slide-hero">
-                    <img src="{{ asset('frontend/images/img1.jpg') }}" alt="" class="image"/>
+                    <img src="{{ asset('frontend/images/team/banner.heic') }}" alt="" class="image"/>
                     <div  class="image-data">
                         <h2  data-aos="fade-down">
                         {{ __('pg-product-title') }}
@@ -21,14 +21,12 @@
                 </div>
             </div>
         </section>
-
         <section class="page-default">
             <div class="wrapper">
                 <div class="container">
                     <nav class="sidenav">
                       <div class="title" data-aos="fade-right">
                         <h3>{{ __('pg-product-title') }}</h3>
-
                       </div>
                         <ul class="nav__list" >
                             <li data-aos="fade-left" data-aos-duration="500"  class="nav__item">
@@ -56,13 +54,32 @@
                     </nav>
                     <div class="product-box" data-aos="fade-up" data-aos-duration="1000" >
                         <div class="card pc1 active" id="pc1">
-                            <div class="img-container">
-                                <img
-                                    class="p1"
-                                    data-tilt data-tilt-glare data-tilt-max-glare="0.8"
-                                    src="{{ asset('frontend/images/products/tococo.png') }}"
-                                    alt="">
+                            <div class="carousel">
+                                <div class="carousel-container">
+                                    <button class="carousel-button prev">❮</button>
+                                        <div class="img-container">
+                                            <img class="p1"
+                                                data-tilt data-tilt-glare data-tilt-max-glare="0.8"
+                                                src="{{ asset('frontend/images/products/matcha.png') }}"
+                                                alt="">
+                                        </div>
+                                    <button class="carousel-button next">❯</button>
+                                </div>
+                                <div class="carousel-thumbnails">
+                                    <div class="thumbnail active" data-img="{{ asset('frontend/images/products/matcha.png') }}">
+                                        <img src="{{ asset('frontend/images/products/matcha.png') }}" alt="Tococo">
+                                    </div>
+                                    <div class="thumbnail active" data-img="{{ asset('frontend/images/products/ori.png') }}">
+                                        <img src="{{ asset('frontend/images/products/ori.png') }}" alt="Tococo">
+                                    </div>
+                                    <div class="thumbnail active" data-img="{{ asset('frontend/images/products/balado.png') }}">
+                                        <img src="{{ asset('frontend/images/products/balado.png') }}" alt="Tococo">
+                                    </div> <div class="thumbnail active" data-img="{{ asset('frontend/images/products/coklat.png') }}">
+                                        <img src="{{ asset('frontend/images/products/coklat.png') }}" alt="Tococo">
+                                    </div>
+                                 </div>
                             </div>
+
                             <div class="text">
                                 <h3>{{ __('prod-tit1') }}</h3>
                                 <p>{{ __('prod-desc1') }}</p>
@@ -362,5 +379,31 @@ function showProduct(productId) {
   const selectedCard = document.querySelector(`.card.${productId}`);
   selectedCard.classList.add('active');
 }
+document.querySelectorAll('.carousel-thumbnails .thumbnail').forEach(item => {
+    item.addEventListener('click', function() {
+        var mainImage = document.querySelector('.img-container .p1');
+        mainImage.src = this.dataset.img;
+        
+        document.querySelectorAll('.thumbnail').forEach(thumb => thumb.classList.remove('active'));
+        this.classList.add('active');
+    });
+});
+
+document.querySelector('.carousel-button.next').addEventListener('click', function() {
+    var thumbnails = document.querySelectorAll('.carousel-thumbnails .thumbnail');
+    var activeIndex = Array.from(thumbnails).findIndex(item => item.classList.contains('active'));
+    if (activeIndex < thumbnails.length - 1) {
+        thumbnails[activeIndex + 1].click();
+    }
+});
+
+document.querySelector('.carousel-button.prev').addEventListener('click', function() {
+    var thumbnails = document.querySelectorAll('.carousel-thumbnails .thumbnail');
+    var activeIndex = Array.from(thumbnails).findIndex(item => item.classList.contains('active'));
+    if (activeIndex > 0) {
+        thumbnails[activeIndex - 1].click();
+    }
+});
+
 </script>
 @endsection

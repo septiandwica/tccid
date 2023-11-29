@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{$subject}}</title>
+    <title>Contact Us</title>
     <style>
     body {
         font-family: Arial, sans-serif;
@@ -33,26 +33,26 @@
     footer {
         text-align: center;
         padding: 8px;
-        background-color:#335f19;
+        background-color: #335f19;
         color: #fff;
     }
-</style>
+    </style>
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1>PT TOCOCO INDONESIA BERKAH</h1>
+        </header>
 
-
-<div class="container">
-    <header>
-        <h1>PT TOCOCO INDONESIA BERKAH</h1>
-    </header>
-
-    <main>
-        <h4>
-            From:
-        </h4>
-        <h3>{{$fromEmail}}</h3>
+        <main>
+            <h4>From:</h4>
+            <h3>{{ $mail_data['fromName'] }}</h3>
+            <h4>Email:</h4>
+            <h3>{{ $mail_data['fromEmail'] }}</h3>
+            <h4>Subject:</h4>
+            <h3>{{ $mail_data['subject'] }}</h3>
             <h4>Message:</h4>
-            <p>{{$body}}</p>
+            <p>{{ $mail_data['body'] }}</p>
         </main>
 
         <footer>

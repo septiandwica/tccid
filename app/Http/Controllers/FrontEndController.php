@@ -24,10 +24,15 @@ class FrontEndController extends Controller
         //
         return view('about');
     }
-    public function send()
+    public function contact()
     {
         //
         return view('contact');
+    }
+    public function send()
+    {
+        //
+        return view('errors\404');
     }
    
     /**

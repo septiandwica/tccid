@@ -7,7 +7,9 @@ use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
-    public function send(Request $request){
+    public function send(Request $request)
+    {
+        // Validasi input formulir
         $request->validate([
             'name' => 'required',
             'email' => 'required|email',
@@ -15,36 +17,37 @@ class ContactController extends Controller
             'message' => 'required'
         ]);
 
+        // Kirim email jika koneksi internet tersedia
         if ($this->isOnline()) {
             $mail_data = [
-                'recipient' => 'septiandwica03@gmail.com',
+                'recipient' => 'septiandwica03@gmail.com', // Ganti dengan alamat email tujuan
                 'fromEmail' => $request->email,
                 'fromName' => $request->name, 
                 'subject' => $request->subject,
                 'body' => $request->message
             ];
-            Mail::send('email-template', $mail_data, function ($message) use ($mail_data) {
+
+            // Mengirim email menggunakan Mail::send
+            Mail::send('email-template', ['mail_data' => $mail_data], function ($message) use ($mail_data) {
                 $message->to($mail_data['recipient'])
                     ->from($mail_data['fromEmail'], $mail_data['fromName'])
                     ->subject($mail_data['subject']);
-                    
             });
 
+            // Redirect dengan pesan sukses
             return redirect()->back()->with('success', 'Email Sent!');
-        }else{
-            return redirect()->back()->withInput()->with('Error, Please Check Your Internet Connection');
-    
+        } else {
+            // Koneksi internet tidak tersedia
+            return redirect()->back()->withInput()->with('error', 'Error, Please Check Your Internet Connection');
         }
     }
 
-   
-
-    public function isOnline($site = "https://youtube.com/") {
-        if(@fopen($site, "r")){
+    public function isOnline($site = "https://youtube.com/")
+    {
+        if (@fopen($site, "r")) {
             return true;
-        }else{
+        } else {
             return false;
         }
     }
-    //
 }

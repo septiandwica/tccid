@@ -143,7 +143,11 @@ header.header  .top-bar.scrolled {
   }
   
   header.header .logo__img {
-    height: 30px;
+    height: 60px;
+  }
+  header.header .logo span{
+    font-weight: 600;
+    font-size: 16px;
   }
   header.header  .bottom-bar.scrolled .logo__text {
     color: black;
@@ -286,6 +290,11 @@ header.header .bottom-bar.scrolled .dropbtn{
   
   /* MEDIA QUERIES */
   @media (max-width: 650px) {
+    header.header .logo span{
+      font-weight: 500;
+      font-size: 12px;
+      color: black;
+    }
     header.header .responsive-lang{
       display: flex;
       align-items: center;
@@ -332,7 +341,6 @@ header.header .bottom-bar.scrolled .dropbtn{
     header.header .dropbtn{
       color: black;
     }
-  
     header.header .btn {
       font-size: 11px;
       padding: 7px 17px;
@@ -342,11 +350,18 @@ header.header .bottom-bar.scrolled .dropbtn{
       display: block;
     }
   }
-  
+    @media (max-width: 545px) {
+
+     header.header .logo__img {
+    height: 45px;
+  }
+
+  }
   @media (max-width: 360px) {
     header.header .top-bar__content {
       font-size: 10px;
     }
+     
   }
 
  
@@ -825,11 +840,8 @@ section.about .top .title .hline{
   background-color: var(--primary);
   margin-bottom: 20px;
 }
-section.about .top .text-container{
-  text-align: justify;
-  width: 100%;
-  padding: 10px;
-}
+
+
 section.about  .top .text-container p{
   text-align: justify;
   margin-bottom: 20px;
@@ -843,6 +855,53 @@ section.about .top .text-container a{
   padding: 8px 18px;
   color: white;
   border-radius: 5px;
+}
+section.about .top .text-container button#videoPopupBtn {
+  border: none;
+  padding: 7px 16px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  margin: 20px 20px 0px 40px;
+  background: var(--primary);
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+}
+
+section.about .modal {
+  display: none;
+  position: fixed;
+  z-index: 3000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.4);
+  align-items: center; 
+  justify-content: center;
+}
+
+section.about .modal-content {
+  margin: 15% auto;
+  padding: 20px;
+  width: 70%;
+  background-color: white;
+}
+
+section.about .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+section.about .close:hover,
+section.about .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 section.about .top .container .img-container{
   display: flex;
@@ -930,6 +989,94 @@ section.about .bottom .img-container img#npwpImage{
   }
 }
 
+section.appreciation{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 90px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+section.appreciation .wrapper{
+  max-width: 1200px;
+}
+
+section.appreciation .top{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.appreciation .top .title{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+section.appreciation .container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  flex-direction: column;
+}
+section.appreciation .container .img-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+section.appreciation .container .sertif-box{
+  padding: 30px;
+  margin: 20px;
+  border-radius: 5px;
+  width: 400px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 1px 0px 8px 4px rgba(24, 24, 24, 0.059);
+  -webkit-box-shadow: 1px 0px 8px 4px rgba(11, 11, 11, 0.059);
+  -moz-box-shadow: 1px 0px 8px 4px rgba(2, 2, 2, 0.059);;
+}
+section.appreciation .container .sertif-box img{
+  width: 400px;
+  padding: 20px;
+}
+section.appreciation .sertif-box.hidden {
+  display: none;
+}
+section.appreciation  button{
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: var(--primary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+section.appreciation  button:hover{
+  background: var(--third);
+}
+@media screen and (max-width: 650px) {
+  section.appreciation .container .sertif-box{
+    padding: 20px;
+    width: 350px;
+  }
+  section.appreciation .container .sertif-box img{
+    width: 350px;
+  }
+}
+
+
+
 footer{
    background-color: var(--primary);
    position: relative;
@@ -962,8 +1109,7 @@ footer .col{
   padding:0 2rem;
 }
 footer .col .logo{
-  width: 180px;
-  margin-bottom:25px;
+  width: 90px;
 }
 footer .col h3{
   color:var(--highlight);
@@ -1197,6 +1343,64 @@ section.page-default .product-box{
   padding: 0px 40px 40px 40px;
   width: 100%;
 }
+section.page-default .carousel {
+  text-align: center;
+}
+
+.carousel-container {
+  position: relative;
+  margin-bottom: 10px; /* Space for the thumbnails */
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+/* Thumbnails */
+.carousel-thumbnails {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  gap: 5px; /* Space between thumbnails */
+}
+
+.carousel-thumbnails .thumbnail {
+  width: 50px;
+  height: 50px; /* Thumbnail size */
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+.carousel-thumbnails .thumbnail.active {
+  opacity: 1;
+}
+
+
+.carousel-thumbnails img {
+  width: 100%;
+  border: 1px solid #ddd; /* Add border for better visibility */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .carousel-thumbnails .thumbnail {
+      width: 40px; /* Smaller thumbnails on smaller screens */
+  }
+}
 section.page-default .card {
   display: none;
 }
@@ -1252,7 +1456,7 @@ section.page-default .card img.pattern{
   z-index: -1;
 }
 section.page-default .card img.p1{
-  width: 250px;
+  width: 330px;
   position: relative;
 }
 section.page-default .text .desc ul li{

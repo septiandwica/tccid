@@ -42,9 +42,6 @@
                             <li  data-aos="fade-right" data-aos-duration="1100" class="nav__item">
                                 <button onclick="showProduct('pc5')">{{ __('pg-about-nav5') }}</button>
                             </li>
-                            <li  data-aos="fade-left" data-aos-duration="1200" class="nav__item">
-                                <button onclick="showProduct('pc6')">{{ __('pg-about-nav6') }}</button>
-                            </li>
                         </ul>
                     </nav>
                     <div class="about-box">
@@ -55,7 +52,7 @@
                                 <h3>PT TOCOCO INDONESIA BERKAH</h3>
                                 <div class="paragraph-box">
                                     <div class="paragraph">
-                                        <img data-tilt="data-tilt" src="{{ asset('frontend/images/team/comitment.jpg') }}" alt="comitment">
+                                        <img data-tilt="data-tilt" src="{{ asset('frontend/images/company/tococoindonesiaberkah.jpg') }}" alt="comitment">
                                         <div class="desc">
                                             <span>01.</span>
                                             <span>
@@ -67,7 +64,7 @@
                                         </div>
                                     </div>
                                     <div class="paragraph">
-                                        <img data-tilt="data-tilt" src="{{ asset('frontend/images/team/sustainable.jpg') }}" alt="comitment">
+                                        <img data-tilt="data-tilt" src="{{ asset('frontend/images/company/agriculture.png') }}" alt="comitment">
 
                                         <div class="desc">
                                             <span>02.</span>
@@ -81,7 +78,7 @@
                                     </div>
 
                                     <div class="paragraph">
-                                        <img data-tilt="data-tilt" src="{{ asset('frontend/images/team/control.jpg') }}" alt="">
+                                        <img data-tilt="data-tilt" src="{{ asset('frontend/images/company/control.png') }}" alt="">
                                         <div class="desc">
                                             <span>03.</span>
                                             <span>
@@ -202,34 +199,6 @@
                                 <p>{{__('pg-about-nav5')}}</p>
 
                                 <h3>PT TOCOCO INDONESIA BERKAH</h3>
-                                <div class="paragraph-box">
-                                    <div class="paragraph">
-                                        <img data-tilt="data-tilt" src="{{ asset('frontend/images/legality/npwp.png') }}" alt="comitment">
-                                        <div class="desc">
-                                            <span>
-                                                <h3></h3>
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div class="paragraph">
-                                        <img data-tilt="data-tilt" src="{{ asset('frontend/images/legality/NIB.png') }}" alt="comitment">
-
-                                        <div class="desc">
-                                            <span>02.</span>
-                                            <span>
-                                                <h3>NIB</h3>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="card pc6" id="productCard">
-                            <div class="text">
-                                <p>{{__('pg-about-nav6')}}</p>
-
-                                <h3>PT TOCOCO INDONESIA BERKAH</h3>
                                 <div class="galery-box">
                                     <div class="img-container">
                                         <div class="img">
@@ -242,12 +211,6 @@
                                             <img src="{{ asset('frontend/images/products/palabwp.webp') }}" alt="">
                                         </div>
                                         <div class="img">
-                                            <img src="{{ asset('frontend/images/team/sustainable.jpg') }}" alt="">
-                                        </div>
-                                        <div class="img">
-                                            <img src="{{ asset('frontend/images/team/control.jpg') }}" alt="">
-                                        </div>
-                                        <div class="img">
                                             <img src="{{ asset('frontend/images/products/palass.webp') }}" alt="">
                                         </div>
                                         <div class="img">
@@ -255,13 +218,11 @@
                                         </div>
                                         <div class="img">
                                             <img src="{{ asset('frontend/images/products/alcoco(2).webp') }}" alt="">
-                                        </div> 
-
+                                        </div>
                                     </div>
                                     <div class="img-pop">
                                         <span>&times;</span>
                                         <img src="" alt="">
-
                                     </div>
                                 </div>
                             </div>
@@ -277,19 +238,15 @@ window.onload = function () {
 };
 
 function showProduct(productId) {
-  // Hide all product cards
   const cards = document.querySelectorAll('.page-default .card');
   cards.forEach(card => {
       card.classList.remove('active');
   });
-
-  // Show the selected product card
   const selectedCard = document.querySelector(`.card.${productId}`);
   selectedCard.classList.add('active');
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  // Your existing code here
   document.querySelectorAll('.card.pc5 .img-container .img img').forEach(image => {
     image.onclick = () => {
       document.querySelector('.card.pc5 .img-pop').style.display = 'block';

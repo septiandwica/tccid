@@ -46,8 +46,8 @@
             <div class="bottom-bar">
                 <div class="bottom-bar__content">
                     <a href="{{ route('index') }}" class="logo">
-                        <img class="logo__img" id="logoImg" src="{{ asset('frontend/images/icon/whitelogo.svg') }}" alt="logo">
-                        <!-- <span class="logo__text">Tococo</span> -->
+                        <img class="logo__img" id="logoImg" src="{{ asset('frontend/images/icon/whitelogo.png') }}" alt="logo">
+                        <span class="logo__text">TOCOCO INDONESIA BERKAH</span>
                     </a>
 
                     <nav class="nav">
@@ -98,27 +98,31 @@
             </div>
         </header>
         <section class="content">
-        @yield('content')
+            @yield('content')
         </section>
-        <footer>
+        <footer>    
             <div class="container">
                 <div class="row">
                     <div class="col" id="company">
-                        <img src="{{ asset('frontend/images/icon/whitelogo.svg') }}" alt="logo" class="logo">
+                        <img src="{{ asset('frontend/images/icon/whitelogo.png') }}" alt="logo" class="logo"> 
                         <p>
                         {{ __('fot-tagline') }}
                         </p>
                         <div class="social">
-                            <a href="#">
+                            <a target="_blank" href="https://m.facebook.com/profile.php?id=100078883638532&_rdr">
                                 <i class="fab fa-facebook"></i>
                             </a>
-                            <a href="#">
+                            
+                            <a target="_blank" href="https://www.instagram.com/tococochips.id">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="#">
+                            <a target="_blank" href="https://www.tiktok.com/@tococochipsofficial">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <a target="_blank" href="">
                                 <i class="fab fa-twitter"></i>
                             </a>
-                            <a href="#">
+                            <a target="_blank" href="#">
                                 <i class="fab fa-linkedin"></i>
                             </a>
 
@@ -163,15 +167,14 @@
                         <script>
                             document.write(new Date().getFullYear());
                         </script>
-                        All rights reserved | Develop with ❤️
-                        <a class="text-primary" href="https://septiandwica.site">Septiandwica</a>
+                        All rights reserved | Develop with ❤️ By. 
+                        <a class="text-primary" href="https://septiandwica.site">septiandwica</a>
                     </p>
                 </div>
             </div>
 
         </footer>
         <button id="scrollToTopBtn"><i class="fa fa-angle-up"></i></button>
-<!-- Di dalam file Blade Laravel Anda, sebelum </body> tag -->
 <script>
 
     let isLoading = false;
@@ -214,20 +217,15 @@
         var bottomBar = document.querySelector('.bottom-bar');
 
         function updateLogoSource() {
-            // Check if the bottom-bar has the class 'scroll' or if screen width is less than 650px
             if (bottomBar.classList.contains('scrolled') || window.innerWidth < 650) {
-                // Change the source of the img element to a dynamically generated URL for scrolling or small screens
-                logoImg.src = '{{ asset("frontend/images/icon/greenlogo.svg") }}';
+                logoImg.src = '{{ asset("frontend/images/icon/greenlogo.png") }}';
             } else {
-                // Reset the source to the original when the class is not present and screen width is greater than or equal to 650px
-                logoImg.src = '{{ asset("frontend/images/icon/whitelogo.svg") }}';
+                logoImg.src = '{{ asset("frontend/images/icon/whitelogo.png") }}';
             }
         }
 
-        // Initial call to set the logo source based on the initial conditions
         updateLogoSource();
 
-        // Listen for changes in scroll and window resize events
         window.addEventListener('scroll', updateLogoSource);
         window.addEventListener('resize', updateLogoSource);
     });

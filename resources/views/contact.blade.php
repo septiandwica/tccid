@@ -1,4 +1,5 @@
-@extends('frontend.layout') @section('content')
+@extends('frontend.layout') 
+@section('content')
 <section class="jumbotron">
     <div class="wrapper">
         <div class="slide-hero">

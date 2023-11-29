@@ -9,6 +9,10 @@
 
     "message": "Wajib diisi",
     "read-btn": "Selengkapnya",
+    "vid-btn" : "Lihat Profile",
+
+    "btn-loadmore": "Lebih Banyak",
+    "btn-less": "Lebih Sedikit",
     "products": "Produk",
     "back-btn":"Kembali",
     "links": "Tautan",
@@ -135,6 +139,9 @@
     "pg-about-nav3": "Tim Kami",
     "pg-about-nav4": "Legalitas",
     "pg-about-nav5": "Galeri",
+    "pg-ach-tit" : "Pencapaian",
+    "pg-ach-tit-desc" : "Prestasi luar biasa, kehormatan atas dedikasi dan keunggulan kami",
+
 
     "pg-contact-title": "Hubungi Kami",
     "pg-contact-left1": "Alamat",
