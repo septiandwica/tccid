@@ -363,7 +363,7 @@
             </div>
         </section>
 
-        <script>
+        <script defer>
     window.onload = function () {
   showProduct('pc1');
 };
@@ -379,31 +379,37 @@ function showProduct(productId) {
   const selectedCard = document.querySelector(`.card.${productId}`);
   selectedCard.classList.add('active');
 }
-document.querySelectorAll('.carousel-thumbnails .thumbnail').forEach(item => {
-    item.addEventListener('click', function() {
-        var mainImage = document.querySelector('.img-container .p1');
-        mainImage.src = this.dataset.img;
-        
-        document.querySelectorAll('.thumbnail').forEach(thumb => thumb.classList.remove('active'));
-        this.classList.add('active');
+document.addEventListener('DOMContentLoaded', function () {
+    // Handler for thumbnail click
+    document.querySelectorAll('.carousel-thumbnails .thumbnail').forEach(item => {
+        item.addEventListener('click', function() {
+            var mainImage = document.querySelector('.img-container .p1');
+            mainImage.src = this.dataset.img;
+
+            document.querySelectorAll('.thumbnail').forEach(thumb => thumb.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+
+    // Handler for next button
+    document.querySelector('.carousel-button.next').addEventListener('click', function() {
+        var thumbnails = document.querySelectorAll('.carousel-thumbnails .thumbnail');
+        var activeIndex = Array.from(thumbnails).findIndex(item => item.classList.contains('active'));
+        if (activeIndex < thumbnails.length - 1) {
+            thumbnails[activeIndex + 1].click();
+        }
+    });
+
+    // Handler for previous button
+    document.querySelector('.carousel-button.prev').addEventListener('click', function() {
+        var thumbnails = document.querySelectorAll('.carousel-thumbnails .thumbnail');
+        var activeIndex = Array.from(thumbnails).findIndex(item => item.classList.contains('active'));
+        if (activeIndex > 0) {
+            thumbnails[activeIndex - 1].click();
+        }
     });
 });
 
-document.querySelector('.carousel-button.next').addEventListener('click', function() {
-    var thumbnails = document.querySelectorAll('.carousel-thumbnails .thumbnail');
-    var activeIndex = Array.from(thumbnails).findIndex(item => item.classList.contains('active'));
-    if (activeIndex < thumbnails.length - 1) {
-        thumbnails[activeIndex + 1].click();
-    }
-});
-
-document.querySelector('.carousel-button.prev').addEventListener('click', function() {
-    var thumbnails = document.querySelectorAll('.carousel-thumbnails .thumbnail');
-    var activeIndex = Array.from(thumbnails).findIndex(item => item.classList.contains('active'));
-    if (activeIndex > 0) {
-        thumbnails[activeIndex - 1].click();
-    }
-});
 
 </script>
 @endsection
