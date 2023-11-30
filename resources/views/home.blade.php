@@ -355,11 +355,13 @@ function stopAndResetVideo() {
 btn.onclick = function() {
     modal.style.display = "flex"; 
     document.body.style.overflow = 'hidden'; 
+    stopAndResetVideo();
 }
 
 span.onclick = function() {
     modal.style.display = "none";
     document.body.style.overflow = 'auto'; 
+    stopAndResetVideo();
 }
 
 window.onclick = function(event) {
@@ -370,6 +372,4 @@ window.onclick = function(event) {
     }
 }
         </script>
-
-
 @endsection
