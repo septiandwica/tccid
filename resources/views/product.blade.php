@@ -57,20 +57,11 @@
                             <div class="carousel">
                             <div class="carousel-container">
     <div class="img-container">
-        <img class="p1" src="{{ asset('frontend/images/products/matcha.png') }}" alt="Main Display">
+        <img class="carousel-image p1" src="{{ asset('frontend/images/products/matcha.png') }}" alt="Main Display">
     </div>
 
     <button class="carousel-button prev"><i class="fa fa-chevron-left"></i></button>
     <button class="carousel-button next"><i class="fa fa-chevron-right"></i></button>
-
-    <div class="carousel-thumbnails">
-        <img class="thumbnail" src="{{ asset('frontend/images/products/matcha.png') }}" alt="matcha">
-        <img class="thumbnail" src="{{ asset('frontend/images/products/coklat.png') }}" alt="coklat">
-        <img class="thumbnail" src="{{ asset('frontend/images/products/balado.png') }}" alt="balado">
-        <img class="thumbnail" src="{{ asset('frontend/images/products/ori.png') }}" alt="original">
-
-
-    </div>
 </div>
                             </div>
 
@@ -374,32 +365,23 @@ function showProduct(productId) {
   selectedCard.classList.add('active');
 }
 document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.carousel-thumbnails .thumbnail').forEach(item => {
-        item.addEventListener('click', function() {
-            var mainImage = document.querySelector('.img-container .p1');
-            mainImage.src = this.src;
+    var images = ["{{ asset('frontend/images/products/matcha.png') }}", "{{ asset('frontend/images/products/coklat.png') }}", "{{ asset('frontend/images/products/ori.png') }}", "{{ asset('frontend/images/products/balado.png') }}"]; // Add image paths
+    var currentIndex = 0;
 
-            document.querySelectorAll('.thumbnail').forEach(thumb => thumb.classList.remove('active'));
-            this.classList.add('active');
-        });
-    });
+    function updateImage(index) {
+        var imgContainer = document.querySelector('.carousel-image');
+        imgContainer.src = images[index];
+    }
 
     document.querySelector('.carousel-button.next').addEventListener('click', function() {
-        var thumbnails = document.querySelectorAll('.carousel-thumbnails .thumbnail');
-        var activeIndex = Array.from(thumbnails).findIndex(item => item.classList.contains('active'));
-        if (activeIndex < thumbnails.length - 1) {
-            thumbnails[activeIndex + 1].click();
-        }
+        currentIndex = (currentIndex + 1) % images.length;
+        updateImage(currentIndex);
     });
 
     document.querySelector('.carousel-button.prev').addEventListener('click', function() {
-        var thumbnails = document.querySelectorAll('.carousel-thumbnails .thumbnail');
-        var activeIndex = Array.from(thumbnails).findIndex(item => item.classList.contains('active'));
-        if (activeIndex > 0) {
-            thumbnails[activeIndex - 1].click();
-        }
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateImage(currentIndex);
     });
 });
-
 </script>
 @endsection
