@@ -1343,18 +1343,18 @@ section.page-default .product-box{
   padding: 0px 40px 40px 40px;
   width: 100%;
 }
-.carousel-container {
+section.page-default .carousel-container {
   position: relative;
   margin: auto;
   max-width: 600px; /* Adjust as needed */
 }
 
-.img-container img {
+section.page-default .carousel-container .img-container img {
   width: 100%;
   height: auto;
 }
 
-.carousel-button {
+section.page-default .carousel-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -1365,11 +1365,11 @@ section.page-default .product-box{
   z-index: 100;
 }
 
-.carousel-button.prev {
+section.page-default .carousel-button.prev {
   left: 10px;
 }
 
-.carousel-button.next {
+section.page-default .carousel-button.next {
   right: 10px;
 }
 section.page-default .card {
