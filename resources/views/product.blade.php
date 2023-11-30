@@ -348,7 +348,7 @@
             </div>
         </section>
 
-        <script defer>
+        <script>
     window.onload = function () {
   showProduct('pc1');
 };
