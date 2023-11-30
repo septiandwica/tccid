@@ -1343,58 +1343,34 @@ section.page-default .product-box{
   padding: 0px 40px 40px 40px;
   width: 100%;
 }
-section.page-default .carousel-container {
+.carousel-container {
   position: relative;
-  margin-bottom: 10px; /* Space for the thumbnails */
+  margin: auto;
+  max-width: 600px; /* Adjust as needed */
 }
 
-section.page-default .carousel .img-container img {
-  width: 100%; /* Adjust as needed */
+.img-container img {
+  width: 100%;
   height: auto;
 }
 
-section.page-default .carousel  .carousel-button {
+.carousel-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: transparent;
+  background: none;
   border: none;
   font-size: 24px;
   cursor: pointer;
   z-index: 100;
 }
 
-section.page-default .carousel  .carousel-button.prev {
+.carousel-button.prev {
   left: 10px;
 }
 
-section.page-default .carousel  .carousel-button.next {
+.carousel-button.next {
   right: 10px;
-}
-
-section.page-default .carousel  .carousel-thumbnails {
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-  gap: 5px;
-}
-
-section.page-default .carousel  .carousel-thumbnails .thumbnail {
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-  opacity: 0.6;
-  transition: opacity 0.3s ease;
-}
-
-section.page-default .carousel  .carousel-thumbnails .thumbnail.active {
-  opacity: 1;
-}
-
-@media (max-width: 768px) {
-  section.page-default .carousel  .carousel-thumbnails .thumbnail {
-      width: 40px;
-  }
 }
 section.page-default .card {
   display: none;
