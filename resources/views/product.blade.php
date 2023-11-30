@@ -55,16 +55,15 @@
                     <div class="product-box" data-aos="fade-up" data-aos-duration="1000" >
                         <div class="card pc1 active" id="pc1">
                             <div class="carousel">
-                            <div class="carousel-container">
-    <div class="img-container">
-        <img class="carousel-image p1" src="{{ asset('frontend/images/products/matcha.png') }}" alt="Main Display">
-    </div>
+                                <div class="carousel-container">
+                                    <div class="img-container">
+                                        <img class="carousel-image p1" src="{{ asset('frontend/images/products/matcha.png') }}" alt="Main Display">
+                                    </div>
 
-    <button class="carousel-button prev"><i class="fa fa-chevron-left"></i></button>
-    <button class="carousel-button next"><i class="fa fa-chevron-right"></i></button>
-</div>
+                                    <button class="carousel-button prev"><i class="fa fa-chevron-left"></i></button>
+                                    <button class="carousel-button next"><i class="fa fa-chevron-right"></i></button>
+                                </div>
                             </div>
-
                             <div class="text">
                                 <h3>{{ __('prod-tit1') }}</h3>
                                 <p>{{ __('prod-desc1') }}</p>
