@@ -55,29 +55,23 @@
                     <div class="product-box" data-aos="fade-up" data-aos-duration="1000" >
                         <div class="card pc1 active" id="pc1">
                             <div class="carousel">
-                                <div class="carousel-container">
-                                    <button class="carousel-button prev">❮</button>
-                                        <div class="img-container">
-                                            <img class="p1"
-                                                data-tilt data-tilt-glare data-tilt-max-glare="0.8"
-                                                src="{{ asset('frontend/images/products/matcha.png') }}"
-                                                alt="">
-                                        </div>
-                                    <button class="carousel-button next">❯</button>
-                                </div>
-                                <div class="carousel-thumbnails">
-                                    <div class="thumbnail active" data-img="{{ asset('frontend/images/products/matcha.png') }}">
-                                        <img src="{{ asset('frontend/images/products/matcha.png') }}" alt="Tococo">
-                                    </div>
-                                    <div class="thumbnail active" data-img="{{ asset('frontend/images/products/ori.png') }}">
-                                        <img src="{{ asset('frontend/images/products/ori.png') }}" alt="Tococo">
-                                    </div>
-                                    <div class="thumbnail active" data-img="{{ asset('frontend/images/products/balado.png') }}">
-                                        <img src="{{ asset('frontend/images/products/balado.png') }}" alt="Tococo">
-                                    </div> <div class="thumbnail active" data-img="{{ asset('frontend/images/products/coklat.png') }}">
-                                        <img src="{{ asset('frontend/images/products/coklat.png') }}" alt="Tococo">
-                                    </div>
-                                 </div>
+                            <div class="carousel-container">
+    <div class="img-container">
+        <img class="p1" src="{{ asset('frontend/images/products/matcha.png') }}" alt="Main Display">
+    </div>
+
+    <button class="carousel-button prev"><i class="fa fa-chevron-left"></i></button>
+    <button class="carousel-button next"><i class="fa fa-chevron-right"></i></button>
+
+    <div class="carousel-thumbnails">
+        <img class="thumbnail" src="{{ asset('frontend/images/products/matcha.png') }}" alt="matcha">
+        <img class="thumbnail" src="{{ asset('frontend/images/products/coklat.png') }}" alt="coklat">
+        <img class="thumbnail" src="{{ asset('frontend/images/products/balado.png') }}" alt="balado">
+        <img class="thumbnail" src="{{ asset('frontend/images/products/ori.png') }}" alt="original">
+
+
+    </div>
+</div>
                             </div>
 
                             <div class="text">
@@ -380,18 +374,16 @@ function showProduct(productId) {
   selectedCard.classList.add('active');
 }
 document.addEventListener('DOMContentLoaded', function () {
-    // Handler for thumbnail click
     document.querySelectorAll('.carousel-thumbnails .thumbnail').forEach(item => {
         item.addEventListener('click', function() {
             var mainImage = document.querySelector('.img-container .p1');
-            mainImage.src = this.dataset.img;
+            mainImage.src = this.src;
 
             document.querySelectorAll('.thumbnail').forEach(thumb => thumb.classList.remove('active'));
             this.classList.add('active');
         });
     });
 
-    // Handler for next button
     document.querySelector('.carousel-button.next').addEventListener('click', function() {
         var thumbnails = document.querySelectorAll('.carousel-thumbnails .thumbnail');
         var activeIndex = Array.from(thumbnails).findIndex(item => item.classList.contains('active'));
@@ -400,7 +392,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Handler for previous button
     document.querySelector('.carousel-button.prev').addEventListener('click', function() {
         var thumbnails = document.querySelectorAll('.carousel-thumbnails .thumbnail');
         var activeIndex = Array.from(thumbnails).findIndex(item => item.classList.contains('active'));
@@ -409,7 +400,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
-
 
 </script>
 @endsection
