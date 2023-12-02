@@ -28,6 +28,7 @@
         padding: 20px;
         background-color: #fff;
         border-radius: 5px;
+        width: 100%;
     }
 
     footer {
@@ -36,6 +37,7 @@
         background-color: #335f19;
         color: #fff;
     }
+    
     </style>
 </head>
 <body>
