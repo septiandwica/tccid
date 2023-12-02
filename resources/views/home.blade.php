@@ -5,6 +5,7 @@
 <section class="main swiper mySwiper">
             <div class="wrapper swiper-wrapper">
             <div class="slide swiper-slide">
+                <div class="overlay"></div>
                 <img src="{{ asset('frontend/images/team/banner.heic') }}" alt="" class="image" />
                 <div class="image-data" >
                     <span class="text" data-aos="fade-right" data-aos-duration="500">{{ __('swiper-text2') }}</span>
@@ -60,7 +61,7 @@
                 <p>{{ __('high-desc2') }}</p>
             </div>
        </div>
-       <div data-aos="fade-down" data-aos-duration="00" class="box" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
+       <div data-aos="fade-down" data-aos-duration="900" class="box" data-tilt data-tilt-glare data-tilt-max-glare="0.8">
             <img src="{{ asset('frontend/images/icon/flavor.png') }}" alt="">
             <div class="text">
                 <h3>{{ __('high-tit3') }}</h3>
@@ -249,6 +250,7 @@
             </div>
         </section>
         <section class="appreciation">
+            
             <div class="wrapper">
                 <div class="top">
                     <div class="title">
@@ -257,7 +259,8 @@
                         <p  data-aos="fade-down" >{{ __('pg-ach-tit-desc') }}</p>
                     </div>
                 </div>
-                <div class="container">
+                <div class="content">
+                    <div class="container">
                           <div class="img-container"  data-aos="fade-down">
                             <div class="sertif-box">
                             <img  
@@ -295,6 +298,8 @@
                                 <h4>Juara 3 Krenova Kabupaten Banyumas</h4>
                             </div>
                     </div>
+                </div>
+                
                     <button id="loadMore" 
                         data-loadmore="{{ __('btn-loadmore') }}" 
                         data-less="{{ __('btn-less') }}">
