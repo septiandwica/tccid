@@ -178,7 +178,7 @@ header.header .language-dropdown {
   display: inline-block;
 }
 header.header .language-dropdown img{
-  width: 20px;
+  max-width: 20px;
 }
 header.header .language-dropdown a img{
   margin-right: 10px;
@@ -264,7 +264,7 @@ header.header .bottom-bar.scrolled .dropbtn{
   
   header.header .bar {
     height: 2px;
-    width: 27px;
+    max-width: 27px;
     background-color: #000000;
     margin: 5px 0;
     opacity: 0.8;
@@ -315,7 +315,7 @@ header.header .bottom-bar.scrolled .dropbtn{
       left: -100%;
       transform: translateX(-50%);
       background-color: white;
-      width: 100%;
+      max-width: 100%;
       padding: 10px 0 25px;
     }
     header.header .bottom-bar.scrolled  .nav {
@@ -324,7 +324,7 @@ header.header .bottom-bar.scrolled .dropbtn{
       left: -100%;
       transform: translateX(-50%);
       background-color: white;
-      width: 100%;
+      max-width: 100%;
       padding: 10px 0 25px;
     }
   
@@ -370,12 +370,12 @@ header.header .bottom-bar.scrolled .dropbtn{
  
   section.swiper{
     height: 100vh;
-    width: 100%;
+    max-width: 100%;
   }
 
   section.swiper .wrapper,
   section.swiper .slide {
-    width: 100%;
+    max-width: 100%;
     height: 100%;
   }
   section.swiper .slide {
@@ -385,13 +385,13 @@ header.header .bottom-bar.scrolled .dropbtn{
     content: "";
     position: absolute;
     height: 100%;
-    width: 100%;
+    max-width: 100%;
     background-color: #151b1f7d;
     z-index: 2;
   }
   section.swiper .slide .image {
     height: 100%;
-    width: 100%;
+    max-width: 100%;
     object-fit: cover;
   }
   section.swiper .slide .image-data {
@@ -431,7 +431,7 @@ header.header .bottom-bar.scrolled .dropbtn{
   /* swiper button css */
   section.swiper .nav-btn {
     height: 40px;
-    width: 40px;
+    max-width: 40px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.3);
   }
@@ -463,7 +463,7 @@ header.header .bottom-bar.scrolled .dropbtn{
   
   @media screen and (max-width: 768px) {
     section.swiper .slide .image-data {
-      width: 100%;
+      max-width: 100%;
     }
     section.swiper .nav-btn {
       visibility: hidden;
@@ -483,7 +483,7 @@ header.header .bottom-bar.scrolled .dropbtn{
 
 section.highlight{
   height: 30vh;
-  width: 100%;
+  max-width: 100%;
   color: white;
   display: flex;
   align-items: center;
@@ -515,7 +515,7 @@ section.highlight .box:last-child{
   border-right: none;
 }
 section.highlight .box img{
-  width: 70px;
+  max-width: 70px;
   margin: 10px 10px 10px 0px;
 }
 section.highlight .box img:hover{
@@ -543,7 +543,7 @@ section.highlight .box .text h3{
   }
   section.highlight .box{
     border-right: none;
-    width: 400px;
+    max-width: 400px;
     margin: 20px;
     background-color: var(--primary);
     border-bottom: none;
@@ -557,19 +557,19 @@ section.highlight .box .text h3{
 
 @media (max-width: 645px) {
   section.highlight .box{
-    width: 370px;
+    max-width: 370px;
   }
 }
 @media (max-width: 545px) {
   section.highlight .box{
-    width: 300px;
+    max-width: 300px;
     margin: 20px;
   }
 }
 
 section.products{
   height: 100%;
-  width: 100%;
+  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -589,7 +589,7 @@ section.products .title h2{
  font-size: 30px;
 }
 section.products .title .hline{
-  width: 240px;
+  max-width: 240px;
   height: 3px;
   background-color: var(--primary);
   margin-bottom: 20px;
@@ -600,17 +600,17 @@ section.products .container{
   margin-top: 90px;
 }
 section.products .hline{
-  width: 1200px;
+  max-width: 1200px;
   height: 1px;
   background-color: var(--third);
 }
 section.products .hline2{
-  width: 599px;
+  max-width: 599px;
   height: 1px;
   background-color: var(--third);
 }
 section.products .vline{
-  width: 1px;
+  max-width: 1px;
   height: 800px;
   background-color: var(--third);
 }
@@ -645,14 +645,14 @@ section.products .img-container{
   justify-content: center;
 }
 section.products .card img.pattern{
-  width: 300px;
+  max-width: 300px;
   z-index: -1;
 }
 section.products .card img{
   position: absolute;
 }
 section.products .card img:nth-child(2){
-  width: 150px;
+  max-width: 150px;
 }
 section.products .left .card:nth-child(1){
   height: 450px;
@@ -667,7 +667,7 @@ section.products .right .card:nth-child(3){
   height: 450px;
 }
 section.products .card .text{
-  width: 300px;
+  max-width: 300px;
   margin-right: 120px;
 }
 @media screen and (max-width: 1200px) {
@@ -675,10 +675,10 @@ section.products .card .text{
     padding: 30px;
   }
   section.products .hline{
-    width: 969px;
+    max-width: 969px;
   }
   section.products .hline2{
-    width: 484px;
+    max-width: 484px;
   }
   section.products .vline{
     height: 1000px;
@@ -705,13 +705,13 @@ section.products .card .text{
     margin-bottom: 120px;
   }
   section.products .card img.pattern{
-    width: 300px;
+    max-width: 300px;
   }
   section.products .card img:nth-child(2).p1{
-    width: 150px;
+    max-width: 150px;
   }
   section.products .card img:nth-child(2){
-    width: 180px;
+    max-width: 180px;
   }
   section.products .left .card:nth-child(1){
     height: 550px;
@@ -726,7 +726,7 @@ section.products .card .text{
     height: 550px;
   }
   section.products .card .text{
-    width: 400px;
+    max-width: 400px;
     margin-right: 0px;
   }
   section.products .card .text h3{
@@ -769,10 +769,10 @@ section.products .card .text{
     margin-bottom: 120px;
   }
   section.products .card img:nth-child(2).p1{
-    width: 150px;
+    max-width: 150px;
   }
   section.products .card img:nth-child(2){
-    width: 100px;
+    max-width: 100px;
   }
   section.products .left .card:nth-child(1),
   section.products .left .card:nth-child(3),
@@ -780,7 +780,7 @@ section.products .card .text{
   section.products .right .card:nth-child(3)
   {
     height: 450px;
-    width: 300px;
+    max-width: 300px;
     box-shadow: 1px 0px 8px 4px rgba(19,44,4,0.26);
 -webkit-box-shadow: 1px 0px 8px 4px rgba(19,44,4,0.26);
 -moz-box-shadow: 1px 0px 8px 4px rgba(19,44,4,0.26);
@@ -789,7 +789,7 @@ section.products .card .text{
     background-color: white;
   }
   section.products .card .text{
-    width: 250px;
+    max-width: 250px;
     margin-right: 0px;
   }
   section.products .card .text h3{
@@ -798,16 +798,16 @@ section.products .card .text{
 }
 @media (max-width: 650px) {
   section.products .card{
-    width: 100px;
+    max-width: 100px;
   }
   section.products .card img.pattern{
-    width: 200px;
+   max-width: 200px;
   }
   section.products .card img:nth-child(2).p1{
-    width: 100px;
+    max-width: 100px;
   }
   section.products .card img:nth-child(2).p7{
-    width: 85px;
+    max-width: 85px;
   }
   section.products .left .card:nth-child(1),
   section.products .left .card:nth-child(3),
@@ -815,7 +815,7 @@ section.products .card .text{
   section.products .right .card:nth-child(3)
   {
     height: 400px;
-    width: 300px;
+    max-width: 300px;
     box-shadow: 1px 0px 8px 4px rgba(19,44,4,0.26);
 -webkit-box-shadow: 1px 0px 8px 4px rgba(19,44,4,0.26);
 -moz-box-shadow: 1px 0px 8px 4px rgba(19,44,4,0.26);
@@ -830,7 +830,7 @@ section.products .card .text{
 
 section.about{
   height: 100%;
-  width: 100%;
+  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -857,7 +857,7 @@ section.about .top{
 section.about .top .title{
   margin-bottom: 30px;
   padding: 20px;
-  width: 100%;
+  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -867,7 +867,7 @@ section.about .top .title h2{
  font-size: 30px;
 }
 section.about .top .title .hline{
-  width: 190px;
+  max-width: 190px;
   height: 3px;
   background-color: var(--primary);
   margin-bottom: 20px;
@@ -905,7 +905,7 @@ section.about .modal {
   z-index: 3000;
   left: 0;
   top: 0;
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   overflow: hidden;
   background-color: rgba(0,0,0,0.4);
@@ -916,7 +916,7 @@ section.about .modal {
 section.about .modal-content {
   margin: 15% auto;
   padding: 20px;
-  width: 70%;
+  max-width: 70%;
   background-color: white;
 }
 
@@ -940,7 +940,7 @@ section.about .top .container .img-container{
   padding: 20px;
 }
 section.about .top .container .img-container img{
-  width: 500px;
+  max-width: 500px;
   border-radius: 10px;
 }
 section.about .bottom{
@@ -952,7 +952,7 @@ section.about .bottom .title{
   text-align: center;
 }
 section.about .bottom .title .hline{
-  width: 140px;
+  max-width: 140px;
   height: 3px;
   background-color: var(--primary);
   margin-bottom: 20px;
@@ -996,13 +996,13 @@ section.about .bottom .img-container img#npwpImage{
 }
 @media screen and (max-width: 1200px) {
   section.about .top .container .img-container img{
-    width: 450px;
+    max-width: 450px;
     border-radius: 10px;
   }
 }
 @media screen and (max-width: 968px) {
   section.about .top .container .img-container img{
-    width: 100%;
+    max-width: 100%;
     border-radius: 10px;
   }
   section.about .top .container{
@@ -1017,7 +1017,7 @@ section.about .bottom .img-container img#npwpImage{
     padding: 5px;
   }
   section.about .bottom .container .document img{
-    width: 300px;
+    max-width: 300px;
   }
   section.about .top .text-container button#videoPopupBtn {
     border: none;
@@ -1034,19 +1034,19 @@ section.about .bottom .img-container img#npwpImage{
   section.about .top .container .btn-group{
     display: flex;
     flex-direction: column;
-    width: 180px;
+    max-width: 180px;
   }
 }
 @media screen and (max-width: 545px) {
   section.about .top .container .img-container img{
-    width: 100%;
+    max-width: 100%;
     border-radius: 10px;
   }
 }
 
 section.appreciation{
   height: 100%;
-  width: 100%;
+  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1064,7 +1064,7 @@ section.appreciation .top{
   justify-content: center;
 }
 section.appreciation .top .title{
-  width: 100%;
+  max-width: 100%;
   display: flex;
   padding: 30px;
   align-items: center;
@@ -1089,7 +1089,7 @@ section.appreciation .container .sertif-box{
   padding: 30px;
   margin: 20px;
   border-radius: 5px;
-  width: 400px;
+  max-width: 400px;
   height: 350px;
   display: flex;
   align-items: center;
@@ -1100,7 +1100,7 @@ section.appreciation .container .sertif-box{
   -moz-box-shadow: 1px 0px 8px 4px rgba(2, 2, 2, 0.059);;
 }
 section.appreciation .container .sertif-box img{
-  width: 400px;
+  max-width: 400px;
   padding: 20px;
 }
 section.appreciation .sertif-box.hidden {
@@ -1123,15 +1123,15 @@ section.appreciation  button:hover{
 }
 @media screen and (max-width: 650px) {
   section.appreciation .top .title{
-    width: 400px;
+    max-width: 400px;
     padding: 30px;
   }
   section.appreciation .container .sertif-box{
     padding: 20px;
-    width: 280px;
+    max-width: 280px;
   }
   section.appreciation .container .sertif-box img{
-    width: 280px;
+  max-width: 280px;
   }
 
 }
@@ -1141,7 +1141,7 @@ section.appreciation  button:hover{
 footer{
    background-color: var(--primary);
    position: relative;
-   width: 100vw;
+   max-width: 100vw;
    background-repeat: no-repeat;
    background-size: cover;
 }
@@ -1170,7 +1170,7 @@ footer .col{
   padding:0 2rem;
 }
 footer .col .logo{
-  width: 90px;
+  max-width: 90px;
 }
 footer .col h3{
   color:var(--highlight);
@@ -1181,7 +1181,7 @@ footer .col h3{
 footer .col h3::after{
   content: '';
   height:3px;
-  width:0px;
+  max-width:0px;
   background-color: var(--highlight);
   position: absolute;
   bottom: 0;
@@ -1190,7 +1190,7 @@ footer .col h3::after{
 
 }
 footer .col h3:hover::after{
-  width:30px
+  max-width:30px
 }
 footer .col .social a i{
   color:var(--highlight);
@@ -1213,7 +1213,7 @@ footer .col .links a{
 footer .col .links a::before{
   content:'';
   height: 16px;
-  width:3px;
+  max-width:3px;
   position: absolute;
   top:5px;
   left:-10px;
@@ -1240,7 +1240,7 @@ footer .copy{
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  width: 100vw;
+  max-width: 100vw;
   background-color: var(--third);
 }
 footer .copy p{
@@ -1257,7 +1257,7 @@ footer .copy p{
   flex-direction: column;
 }
 footer .col{
-  width: 100%;
+  max-width: 100%;
   text-align: left;
   margin-bottom: 25px;
 }
@@ -1268,7 +1268,7 @@ footer .col{
   flex-direction: column;
 }
 footer .col{
-  width: 100%;
+  max-width: 100%;
   text-align: left;
   margin-bottom: 20px;
 }
@@ -1277,7 +1277,7 @@ ooter .copy{
   justify-content: center;
   align-items: center;
   padding:2rem 0;
-  width: 100vw;
+  max-width: 100vw;
   background-color: var(--third);
 }
 footer .copy p{
@@ -1304,12 +1304,12 @@ font-weight: 600;
 
 section.jumbotron{
   height: 60vh;
-  width: 100%;
+  max-width: 100%;
 }
 
 section.jumbotron .wrapper,
 section.jumbotron .slide-hero {
-  width: 100%;
+  max-width: 100%;
   height: 60vh;
 }
 section.jumbotron .slide-hero {
@@ -1320,12 +1320,12 @@ section.jumbotron .slide-hero::before {
   position: absolute;
   height: 60vh;
 
-  width: 100%;
+  max-width: 100%;
   background-color: #151b1f7d;
   z-index: 1;
 }
 section.jumbotron .slide-hero .image {
-  width: 100vw;
+  max-width: 100vw;
   object-fit: cover;
   height: 100vh;
 }
@@ -1365,7 +1365,7 @@ section.jumbotron .image-data a:hover{
 
 section.page-default{
   height: 100%;
-  width: 100%;
+  max-width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1383,7 +1383,7 @@ section.page-default .title{
 }
 
 section.page-default .title .hline{
-  width: 240px;
+  max-width: 240px;
   height: 3px;
   background-color: var(--primary);
   margin-bottom: 20px;
@@ -1402,7 +1402,7 @@ section.page-default .product-box{
   align-items: center;
   flex-direction: column;
   padding: 0px 40px 40px 40px;
-  width: 100%;
+  max-width: 100%;
 }
 section.page-default .product-box .desc{
   padding: 20px;
@@ -1418,7 +1418,7 @@ section.page-default .carousel-container {
 }
 
 section.page-default .carousel-container .img-container img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -1458,7 +1458,7 @@ section.page-default .card:nth-child(6){
 }
 
 section.page-default .card .text{
-  width: 900px;
+  max-width: 900px;
   padding: 20px;
 }
 section.page-default .text h3{
@@ -1487,11 +1487,11 @@ section.page-default .img-container{
   justify-content: center;
 }
 section.page-default .card img.pattern{
-  width: 300px;
+  max-width: 300px;
   z-index: -1;
 }
 section.page-default .card img.p1{
-  width: 330px;
+  max-width: 330px;
   position: relative;
 }
 section.page-default .text .desc ul li{
@@ -1499,7 +1499,7 @@ section.page-default .text .desc ul li{
  margin-left: 25px;
 }
 section.page-default .container nav{
-  width: 100%;
+  max-width: 100%;
 }
 section.page-default .container nav .title{
   margin-bottom: 20px;
@@ -1537,12 +1537,12 @@ section.page-default .container .nav__item button.active
     align-items: center;
   }
   section.page-default .container nav{
-    width: 100%;
+    max-width: 100%;
   padding: 10px 0px 40px 0px;
 
   }
   section.page-default .card .text{
-    width: 100%;
+    max-width: 100%;
     padding: 0px;
   }
   section.page-default .card .text h3{
@@ -1550,13 +1550,13 @@ section.page-default .container .nav__item button.active
   }
 
 section.page-default .product-box .carousel-container .img-container img {
-  width: 80%;
+  max-width: 80%;
   height: auto;
   padding: 10px;
 }
 
 section.page-default .product-box .img-container img.p1{
-  width: 80%;
+  max-width: 80%;
   height: auto;
 }
   section.page-default .container nav .title{
@@ -1583,7 +1583,7 @@ section.jumbotron .image-data h2 {
     align-items: center;
   }
   section.page-default .container nav{
-    width: 60%;
+    max-width: 60%;
   }
   section.jumbotron .image-data .nav a{
     font-size: 14px;
@@ -1591,7 +1591,7 @@ section.jumbotron .image-data h2 {
 }
 
 section.page-default .about-box .card{
-  width: 900px;
+  max-width: 900px;
   padding: 20px 0px 20px 20px;
 }
 section.page-default .about-box .card .text{
@@ -1618,18 +1618,18 @@ section.page-default .about-box .paragraph .desc {
   flex-direction: column;
 }
 section.page-default .about-box .paragraph img{
-  width: 400px;
+  max-width: 400px;
   height: 100%;
   margin: 20px;
 }
 
 @media screen and (max-width: 968px) {
   section.page-default .about-box .card{
-    width: 100%;
+    max-width: 100%;
     padding: 20px;
   }
   section.page-default .about-box .paragraph img{
-    width: 300px;
+    max-width: 300px;
     margin: 20px;
   }
   section.page-default .about-box .paragraph {
@@ -1643,7 +1643,7 @@ section.page-default .about-box .paragraph img{
     flex-direction: column;
   }
   section.page-default .about-box .paragraph img{
-    width: 300px;
+    max-width: 300px;
     height: 100%;
     margin: 20px;
   }
@@ -1657,7 +1657,7 @@ section.page-default .about-box .paragraph img{
 }
 @media screen and (max-width: 545px){
   section.page-default .about-box .paragraph img{
-    width: 250px;
+    max-width: 250px;
   }
   section.page-default .about-box .card{
     padding: 20px 0px 20px 0px;
@@ -1672,7 +1672,7 @@ section.page-default .card.pc3 .container{
 	margin:auto;
 }
 section.page-default .card.pc3 .section-title{
-	width: 100%;
+	max-width: 100%;
 	padding:0 15px;
 	text-align: center;
 	margin-bottom: 60px;
@@ -1691,7 +1691,7 @@ section.page-default .card.pc3 .row{
 	flex-wrap: wrap;
 }
 section.page-default .card.pc3 img{
-	width: 400px ;
+	max-width: 400px ;
 	vertical-align: middle;
 }
 /*team section*/
@@ -1700,13 +1700,13 @@ section.page-default .card.pc3 .team{
 	padding: 20px 0;
 }
 section.page-default .card.pc3 .team-item{
-	width: calc((100% / 2) - 30px);
+	max-width: calc((100% / 2) - 30px);
 	margin:0 15px 50px;
 	position: relative;
 }
 
 section.page-default .card.pc3 .team-item img{
-	width: calc(100% - 60px);
+	max-width: calc(100% - 60px);
 	position: relative;
 	z-index: 1;
 	transition: transform 0.5s ease;
