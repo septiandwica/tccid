@@ -118,7 +118,7 @@
                                 data-tilt data-tilt-glare data-tilt-max-glare="0.8"
                                     src="{{ asset('frontend/images/products/pepper.png') }}"
                                     alt=""
-                                   >
+                                    >
                             </div>
                         </div>
                     </div>
@@ -191,10 +191,13 @@
                         </div>
                         <div  data-aos="fade-up" class="text-container">
                             <p>{{ __('pg-about-text-desc') }}</p>
+                            <div class="btn-group">
                             <a href="{{ route('about') }}">{{ __('read-btn') }}
                                 <i class="fa fa-chevron-right"></i>
                             </a>
                             <button id="videoPopupBtn"><i class="fa fa-play"></i> {{ __('vid-btn') }}</button>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -254,11 +257,10 @@
                         <p  data-aos="fade-down" >{{ __('pg-ach-tit-desc') }}</p>
                     </div>
                 </div>
-                <div  class="container">
+                <div class="container">
                           <div class="img-container"  data-aos="fade-down">
                             <div class="sertif-box">
                             <img  
-                                
                                 src="{{ asset('frontend/images/achievement/umkmterbaik.jpg') }}"
                                 alt=""
                                >
@@ -294,11 +296,10 @@
                             </div>
                     </div>
                     <button id="loadMore" 
-        data-loadmore="{{ __('btn-loadmore') }}" 
-        data-less="{{ __('btn-less') }}">
-    {{ __('btn-loadmore') }}
-</button>
-                    
+                        data-loadmore="{{ __('btn-loadmore') }}" 
+                        data-less="{{ __('btn-less') }}">
+                        {{ __('btn-loadmore') }}
+                    </button>            
             </div>
         </section>
 

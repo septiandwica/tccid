@@ -355,6 +355,9 @@ header.header .bottom-bar.scrolled .dropbtn{
      header.header .logo__img {
     height: 45px;
   }
+  .language-label span {
+    display: none;
+}
 
   }
   @media (max-width: 360px) {
@@ -523,7 +526,6 @@ section.highlight .box .text{
 }
 section.highlight .box .text h3{
   color: var(--highlight);
-
 }
 @media screen and (max-width: 968px) {
   section.highlight{
@@ -556,6 +558,12 @@ section.highlight .box .text h3{
 @media (max-width: 645px) {
   section.highlight .box{
     width: 370px;
+  }
+}
+@media (max-width: 545px) {
+  section.highlight .box{
+    width: 300px;
+    margin: 20px;
   }
 }
 
@@ -664,10 +672,7 @@ section.products .card .text{
 }
 @media screen and (max-width: 1200px) {
   section.products .title{
-    text-align: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    padding: 30px;
   }
   section.products .hline{
     width: 969px;
@@ -738,7 +743,6 @@ section.products .card .text{
   section.products .container{
     flex-wrap: wrap;
   }
-
   section.products .hline,
   section.products .hline2,
   section.products .vline{
@@ -792,6 +796,34 @@ section.products .card .text{
     text-align: center;
   }
 }
+@media (max-width: 650px) {
+  section.products .card{
+    width: 100px;
+  }
+  section.products .card img.pattern{
+    width: 200px;
+  }
+  section.products .card img:nth-child(2).p1{
+    width: 100px;
+  }
+  section.products .card img:nth-child(2).p7{
+    width: 85px;
+  }
+  section.products .left .card:nth-child(1),
+  section.products .left .card:nth-child(3),
+  section.products .right .card:nth-child(1),
+  section.products .right .card:nth-child(3)
+  {
+    height: 400px;
+    width: 300px;
+    box-shadow: 1px 0px 8px 4px rgba(19,44,4,0.26);
+-webkit-box-shadow: 1px 0px 8px 4px rgba(19,44,4,0.26);
+-moz-box-shadow: 1px 0px 8px 4px rgba(19,44,4,0.26);
+    margin: 20px;
+    color: black;
+    background-color: white;
+  }
+}
 
 
 
@@ -840,8 +872,6 @@ section.about .top .title .hline{
   background-color: var(--primary);
   margin-bottom: 20px;
 }
-
-
 section.about  .top .text-container p{
   text-align: justify;
   margin-bottom: 20px;
@@ -982,6 +1012,31 @@ section.about .bottom .img-container img#npwpImage{
     margin-right: 0px;
   }
 }
+@media (max-width: 650px) {
+  section.about  .top .text-container {
+    padding: 5px;
+  }
+  section.about .bottom .container .document img{
+    width: 300px;
+  }
+  section.about .top .text-container button#videoPopupBtn {
+    border: none;
+    padding: 7px 16px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin: 20px 0px 0px 0px;
+    background: var(--primary);
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+  }
+  section.about .top .container .btn-group{
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+  }
+}
 @media screen and (max-width: 545px) {
   section.about .top .container .img-container img{
     width: 100%;
@@ -1011,6 +1066,7 @@ section.appreciation .top{
 section.appreciation .top .title{
   width: 100%;
   display: flex;
+  padding: 30px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -1066,13 +1122,18 @@ section.appreciation  button:hover{
   background: var(--third);
 }
 @media screen and (max-width: 650px) {
+  section.appreciation .top .title{
+    width: 400px;
+    padding: 30px;
+  }
   section.appreciation .container .sertif-box{
     padding: 20px;
-    width: 350px;
+    width: 280px;
   }
   section.appreciation .container .sertif-box img{
-    width: 350px;
+    width: 280px;
   }
+
 }
 
 
@@ -1178,7 +1239,7 @@ footer .copy{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding:2rem 0;
+  padding: 2rem;
   width: 100vw;
   background-color: var(--third);
 }
@@ -1190,7 +1251,7 @@ footer .copy p{
 
 
 /********** Responsive Design ********/
-@media(max-width:900px)
+@media screen and (max-width:976px)
 {
   footer .row{
   flex-direction: column;
@@ -1201,7 +1262,7 @@ footer .col{
   margin-bottom: 25px;
 }
 }
-@media(max-width:768px)
+@media screen and (max-width:768px)
 {
   footer .row{
   flex-direction: column;
@@ -1343,10 +1404,17 @@ section.page-default .product-box{
   padding: 0px 40px 40px 40px;
   width: 100%;
 }
+section.page-default .product-box .desc{
+  padding: 20px;
+
+}
+section.page-default .carousel{
+  padding: 20px;
+}
 section.page-default .carousel-container {
   position: relative;
   margin: auto;
-  max-width: 600px; /* Adjust as needed */
+  max-width: 500px;
 }
 
 section.page-default .carousel-container .img-container img {
@@ -1388,14 +1456,10 @@ section.page-default .card:nth-child(4){
 section.page-default .card:nth-child(6){
   flex-direction: row-reverse;
 }
-section.page-default .card .text:nth-child(2){
-  margin-left: 20px;
-}
-section.page-default .card .text:nth-child(4){
-  margin-left: 20px;
-}
+
 section.page-default .card .text{
   width: 900px;
+  padding: 20px;
 }
 section.page-default .text h3{
   font-size: 24px;
@@ -1479,18 +1543,24 @@ section.page-default .container .nav__item button.active
   }
   section.page-default .card .text{
     width: 100%;
+    padding: 0px;
   }
   section.page-default .card .text h3{
     text-align: center;
   }
   section.page-default .product-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    flex-direction: column;
-    width: 100%;
+
   }
+section.page-default .product-box .carousel-container .img-container img {
+  width: 80%;
+  height: auto;
+  padding: 10px;
+}
+
+section.page-default .product-box .img-container img.p1{
+  width: 80%;
+  height: auto;
+}
   section.page-default .container nav .title{
     margin-bottom: 20px;
     margin-top: 40px;
@@ -1523,17 +1593,19 @@ section.jumbotron .image-data h2 {
 }
 
 section.page-default .about-box .card{
-  padding: 0px 40px 40px 40px;
-  width: 100%;
+  width: 900px;
+  padding: 20px 0px 20px 20px;
 }
 section.page-default .about-box .card .text{
-  padding: 0px 20px 20px 20px;
+  padding: 0px 0px 20px 20px;
+  text-align: justify;
 }
 section.page-default .about-box .card .text h3{
   text-align: left;
 }
 section.page-default .about-box .paragraph span:nth-child(1){
   font-size: 30px;
+  padding-left: 20px;
 }
 section.page-default .about-box .paragraph {
   display: flex;
@@ -1554,6 +1626,14 @@ section.page-default .about-box .paragraph img{
 }
 
 @media screen and (max-width: 968px) {
+  section.page-default .about-box .card{
+    width: 100%;
+    padding: 20px;
+  }
+  section.page-default .about-box .paragraph img{
+    width: 300px;
+    margin: 20px;
+  }
   section.page-default .about-box .paragraph {
     flex-direction: column;
   }
@@ -1568,6 +1648,24 @@ section.page-default .about-box .paragraph img{
     width: 300px;
     height: 100%;
     margin: 20px;
+  }
+  section.page-default .product-box .carousel-container .carousel-button i{
+    font-size: 12px;
+  }
+  section.page-default .about-box .card .text h3, 
+  section.page-default .about-box .card .text p{
+    padding: 0px 20px 20px 20px;
+  }
+}
+@media screen and (max-width: 545px){
+  section.page-default .about-box .paragraph img{
+    width: 250px;
+  }
+  section.page-default .about-box .card{
+    padding: 20px 0px 20px 0px;
+  }
+  section.page-default .about-box .card .text{
+    padding: 0px 0px 20px 0px;
   }
 }
 
@@ -1767,15 +1865,33 @@ section.page-default .card.pc5 .img-pop img{
   }
 }
 
+
+section.page-default .contact{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
 section.page-default .container-contact{
   padding: 20px 60px 30px 40px;
   box-shadow: 0 1px 3px  #335f1925;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  width: 100%;
 }
 section.page-default .container-contact .content{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
   height: 100%;
+}
+section.page-default .contact-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 section.page-default .contact-content .contact-box{
   display: flex;
@@ -1853,28 +1969,22 @@ section.page-default .right-side button{
 section.page-default .button button:hover{
   background: var(--third);
 }
-@media (max-width: 950px) {
+@media screen and (max-width: 976px) {
   section.page-default .container-contact{
     padding: 30px 40px 40px 35px ;
+    width: 90%;
   }
   section.page-default .container-contact .content .right-side{
    margin-left: 55px;
 }
 }
-@media (max-width: 820px) {
-  section.page-default .container-contact{
-    margin: 40px 0;
-  }
-  section.page-default .container-contact .content{
-    flex-direction: column-reverse;
-    height: 100%;
-  }
+@media screen and (max-width: 820px) {
   section.page-default .container-contact .content .left-side{
    width: 100%;
-   flex-direction: row;
    margin-top: 40px;
    justify-content: center;
    flex-wrap: wrap;
+   align-items: center;
  }
  section.page-default .container-contact .content .left-side::before{
    display: none;
@@ -1883,4 +1993,17 @@ section.page-default .button button:hover{
    width: 100%;
    margin-left: 0;
  }
+ 
+}
+@media screen and (max-width: 412px){
+  section.page-default .contact-content .contact-box{
+    width: 90%;
+  }
+  section.page-default .contact-content .contact-card{
+  justify-content: center;
+  box-shadow: 0 1px 3px  #335f1925;
+  padding:40px;
+  width: 340px;
+  height: 200px;
+  }
 }

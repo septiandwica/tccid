@@ -25,6 +25,7 @@
 
 <section class="page-default">
     <div class="wrapper">
+        <div class="contact">
         <div class="container-contact" data-aos="fade-down" data-aos-duration="700" >
             <div class="content">
                 <div class="right-side">
@@ -120,10 +121,12 @@
                 <div class="email details  contact-card" data-aos="fade-up" data-aos-duration="900" >
                     <i class="fas fa-envelope"></i>
                     <div class="topic">{{__('pg-contact-left3')}}</div>
-                    <div class="text-one">pttococoindonesiaberkah@gmail.com</div>
+                    <div class="text-one">cs@tococoindonesia.com</div>
                 </div>
             </div>
         </div>
+        </div>
+        
     </div>
 </section>
 @endsection

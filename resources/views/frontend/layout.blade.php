@@ -76,21 +76,20 @@
                         <input type="checkbox" id="toggle">
                         <label for="toggle" class="dropbtn">
                         <span id="selected-language" class="language-label">
-            <img src="{{ asset('frontend/images/lang/' . app()->getLocale() . '.png') }}" alt="">
-            {{ __('language') }}
-        </span>
+                            <img src="{{ asset('frontend/images/lang/' . app()->getLocale() . '.png') }}" alt="">
+                            <span>{{ __('language') }}</span>
+                        </span>
                         </label>
                         <div id="languageDropdown" class="dropdown-content">
                         @if(app()->getLocale() == 'id')
                         <a href="{{ url('locale/en') }}">
                             <img src="{{ asset('frontend/images/lang/en.png') }}"  alt="">{{__('nav-en')}}</a>
-
                         @endif
                         @if(app()->getLocale() == 'en')
                         <a href="{{ url('locale/id') }}" ><img src="{{ asset('frontend/images/lang/id.png') }}"  alt="">{{__('nav-id')}}</a>
                         @endif
-                            
-                        </div>
+                
+                    </div>
                     </div>
                     </div>
                    
