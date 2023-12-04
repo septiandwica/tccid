@@ -17,7 +17,7 @@
                 </div>
               </div>
               <div class="slide swiper-slide">
-                <img src="{{ asset('frontend/images/slider/img1.png') }}" alt="" class="image" />
+                <img src="{{ asset('frontend/images/slider/img1.WEBP') }}" alt="" class="image" />
                 <div class="image-data">
                   <span data-aos="fade-right" data-aos-duration="500" class="text">{{ __('swiper-text1') }}</span>
                   <h2 data-aos="fade-left" data-aos-duration="700">
@@ -88,9 +88,9 @@
                                 <h3>{{ __('prod-tit1') }}</h3>
                                 <p>{{ __('prod-desc1') }}</p>
                                 <div class="btn">
-                                    <a href="{{ route('product') }}">{{ __('read-btn') }}
+                                <p>To see all of our  Product <a href="{{ route('product') }}">{{ __('read-btn') }}
                                         <i class="fa fa-chevron-right"></i>
-                                    </a>
+                                    </a></p>
                                 </div>
                             </div>
                             <div class="img-container">
@@ -108,9 +108,9 @@
                                 <h3>{{ __('prod-tit2') }}</h3>
                                 <p>{{ __('prod-desc2') }}</p>
                                 <div class="btn">
-                                    <a href="{{ route('product') }}">{{ __('read-btn') }}
+                                <p>To see all of our  Product <a href="{{ route('product') }}">{{ __('read-btn') }}
                                         <i class="fa fa-chevron-right"></i>
-                                    </a>
+                                    </a></p>
                                 </div>
                             </div>
                             <div class="img-container">
@@ -130,9 +130,9 @@
                                 <h3>{{ __('prod-tit3') }}</h3>
                                 <p>{{ __('prod-desc3') }}</p>
                                 <div class="btn">
-                                    <a href="{{ route('product') }}">{{ __('read-btn') }}
+                                <p>To see all of our  Product <a href="{{ route('product') }}">{{ __('read-btn') }}
                                         <i class="fa fa-chevron-right"></i>
-                                    </a>
+                                    </a></p>
                                 </div>
                             </div>
                             <div class="img-container">
@@ -151,9 +151,9 @@
                                 <h3>{{ __('prod-tit4') }}</h3>
                                 <p>{{ __('prod-desc4') }}</p>
                                 <div class="btn">
-                                    <a href="{{ route('product') }}">{{ __('read-btn') }}
+                                <p>To see all of our  Product <a href="{{ route('product') }}">{{ __('read-btn') }}
                                         <i class="fa fa-chevron-right"></i>
-                                    </a>
+                                    </a></p>
                                 </div>
                             </div>
                             <div class="img-container">
@@ -233,9 +233,9 @@
                             <img  
                                 id="npwpImage"
                                 data-tilt data-tilt-glare data-tilt-max-glare="0.8"
-                                src="{{ asset('frontend/images/legality/npwp.png') }}"
+                                src="{{ asset('frontend/images/legality/npwp.WEBP') }}"
                                 alt=""
-                                width="400px">
+                                width="554px">
                             <img
                             
                                 id="nibImage"
@@ -267,35 +267,35 @@
                                 src="{{ asset('frontend/images/achievement/umkmterbaik.jpg') }}"
                                 alt=""
                                >
-                                <h4>UMKM terbaik oleh ASPIKMAS AKADEMI</h4>
+                                <h3>UMKM terbaik oleh ASPIKMAS AKADEMI</h3>
                             </div>
                             <div class="sertif-box">
                             <img  
                                 src="{{ asset('frontend/images/achievement/timfieldterbaik.jpg') }}"
                                 alt=""
                                 >
-                                <h4>Team Field Terbaik oleh ASPIKMAS AKADEMI</h4>
+                                <h3>Team Field Terbaik oleh ASPIKMAS AKADEMI</h3>
                             </div>
                             <div class="sertif-box hidden">
                             <img  
-                                src="{{ asset('frontend/images/achievement/top5.jpg') }}"
+                                src="{{ asset('frontend/images/achievement/top5.WEBP') }}"
                                 alt=""
                                 >
-                                <h4>Top 5 UMKM FnB Track oleh Digital Creative Entrepreneurs</h4>
+                                <h3>Top 5 UMKM FnB Track oleh Digital Creative Entrepreneurs</h3>
                             </div>
                             <div class="sertif-box hidden">
                             <img  
-                                src="{{ asset('frontend/images/achievement/top20.jpg') }}"
+                                src="{{ asset('frontend/images/achievement/top20.WEBP') }}"
                                 alt=""
                                 >
-                                <h4>Top 20 UMKM DCE oleh Digital Creative Entrepreneurs</h4>
+                                <h3>Top 20 UMKM DCE oleh Digital Creative Entrepreneurs</h3>
                             </div>
                             <div class="sertif-box hidden">
                             <img  
                                 src="{{ asset('frontend/images/achievement/juara3.jpg') }}"
                                 alt=""
                                 >
-                                <h4>Juara 3 Krenova Kabupaten Banyumas</h4>
+                                <h3>Juara 3 Krenova Kabupaten Banyumas</h3>
                             </div>
                     </div>
                 </div>

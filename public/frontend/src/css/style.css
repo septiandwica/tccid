@@ -13,23 +13,6 @@
     --highlight: #c7ff65;
     --light: #559c2b;
 }
-::-webkit-scrollbar-thumb {
-	border-radius: 10px;
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
-	background-color: var(--primary);
-}
-
-::-webkit-scrollbar-track {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	border-radius: 10px;
-	background-color: #F5F5F5;
-}
-::-webkit-scrollbar {
-	width: 8px;
-	background-color: #F5F5F5;
-	border-radius: 10px;
-
-}
 
   
   ul {
@@ -1959,6 +1942,14 @@ section.page-default .card.pc5 .img-pop img{
   height:50%;
 
   }
+  section.page-default .card.pc5 .galery-box .img-container .img{
+  height: auto;
+  width: 290px;
+  border: 5px solid white;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
 }
 
 

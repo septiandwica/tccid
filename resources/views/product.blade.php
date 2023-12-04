@@ -33,22 +33,13 @@
                                 <button onclick="showProduct('pc1')">{{ __('prod-tit1') }}</button>
                             </li>
                             <li data-aos="fade-right" data-aos-duration="700"  class="nav__item">
-                                <button onclick="showProduct('pc2')">{{ __('prod-tit2.1') }}</button>
+                                <button onclick="showProduct('pc2')">{{ __('prod-tit2') }}</button>
                             </li>
                             <li data-aos="fade-left" data-aos-duration="900"  class="nav__item">
-                                <button onclick="showProduct('pc3')">{{ __('prod-tit2.2') }}</button>
+                                <button onclick="showProduct('pc3')">{{ __('prod-tit3') }}</button>
                             </li>
                             <li data-aos="fade-right" data-aos-duration="1100"  class="nav__item">
-                                <button onclick="showProduct('pc4')">{{ __('prod-tit3.1') }}</button>
-                            </li>
-                            <li data-aos="fade-left" data-aos-duration="1300"  class="nav__item">
-                                <button onclick="showProduct('pc5')">{{ __('prod-tit3.2') }}</button>
-                            </li>
-                            <li data-aos="fade-right" data-aos-duration="1500"  class="nav__item">
-                                <button onclick="showProduct('pc6')">{{ __('prod-tit3.3') }}</button>
-                            </li>
-                            <li data-aos="fade-left" data-aos-duration="1700"  class="nav__item">
-                                <button onclick="showProduct('pc7')">{{ __('prod-tit4') }}</button>
+                                <button onclick="showProduct('pc4')">{{ __('prod-tit4') }}</button>
                             </li>
                         </ul>
                     </nav>
@@ -129,9 +120,6 @@
                                     </ul>
                                 </div>
                             </div>
-
-                        </div>
-                        <div class="card pc3" id="pc3" data-aos="zoom-in-up" data-aos-duration="600">
                             <div class="img-container">
                                 <img
                                     class="p1"
@@ -168,9 +156,8 @@
                                     </ul>
                                 </div>
                             </div>
-
                         </div>
-                        <div class="card pc4" id="pc4">
+                        <div class="card pc3" id="pc3">
                             <div class="img-container">
                                 <img
                                     class="p1"
@@ -213,9 +200,6 @@
                                     </ul>
                                 </div>
                             </div>
-
-                        </div>
-                        <div class="card pc5" id="pc5">
                             <div class="img-container">
                                 <img
                                     class="p1"
@@ -258,9 +242,6 @@
                                     </ul>
                                 </div>
                             </div>
-
-                        </div>
-                        <div class="card pc6" id="pc6">
                             <div class="img-container">
                                 <img
                                     class="p1"
@@ -303,9 +284,8 @@
                                     </ul>
                                 </div>
                             </div>
-
                         </div>
-                        <div class="card pc7" id="pc7">
+                        <div class="card pc4" id="pc4">
                             <div class="img-container">
                                 <img
                                     class="p2"

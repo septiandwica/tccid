@@ -4,7 +4,16 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        <meta name="description" content="Kencang Store - Toko Online Terpercaya dengan Produk Berkualitas. Temukan berbagai kebutuhan Anda di sini.">
+        <meta name="description" content="Kencang Online Store adalah toko online terpercaya yang menawarkan berbagai produk berkualitas. Temukan penawaran terbaik kami.">
+    <meta name="keywords" content="Kencang, Online Store, produk berkualitas, penawaran terbaik">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sstore.kencang.id/">
+    <meta property="og:title" content="Kencang Online Store - Toko Online Terpercaya">
+    <meta property="og:description" content="Kencang Online Store adalah toko online terpercaya yang menawarkan berbagai produk berkualitas. Temukan penawaran terbaik kami.">
+    <meta property="og:image" content="https://sstore.kencang.id/images/logo.png">
+    <meta property="og:url" content="https://sstore.kencang.id/">
+    <meta name="twitter:card" content="summary_large_image">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link
             rel="preconnect"
@@ -28,12 +37,12 @@
 </div>
         <header class="header">
             <div class="top-bar">
-                <div class="top-bar__content">
-                    <a href="https://wa.me/62895333230545" target="_blank" class="phone">
+                <div aria-label="information" class="top-bar__content">
+                    <a aria-label="Phone +62 8953 3323 0545" href="https://wa.me/62895333230545" target="_blank" class="phone">
                         <i class="fa-solid fa-phone icon"></i>
                         <span>+62 8953 3323 0545</span>
                     </a>
-                    <a
+                    <a aria-label="Email pttococoindonesiaberkah@gmail.com"
                         href="mailto:pttococoindonesiaberkah@gmail.com"
                         target="_blank"
                         class="email">
@@ -108,20 +117,20 @@
                         {{ __('fot-tagline') }}
                         </p>
                         <div class="social">
-                            <a target="_blank" href="https://m.facebook.com/profile.php?id=100078883638532&_rdr">
+                            <a target="_blank" aria-label="Facebook Tococo" href="https://m.facebook.com/profile.php?id=100078883638532&_rdr">
                                 <i class="fab fa-facebook"></i>
                             </a>
                             
-                            <a target="_blank" href="https://www.instagram.com/tococochips.id">
+                            <a target="_blank" aria-label="Instagram Tococo"  href="https://www.instagram.com/tococochips.id">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <a target="_blank" href="https://www.tiktok.com/@tococochipsofficial">
+                            <a target="_blank" aria-label="Tiktok Tococo"  href="https://www.tiktok.com/@tococochipsofficial">
                                 <i class="fab fa-tiktok"></i>
                             </a>
-                            <a target="_blank" href="">
+                            <a target="_blank" aria-label="Twitter Tococo"  href="">
                                 <i class="fab fa-twitter"></i>
                             </a>
-                            <a target="_blank" href="#">
+                            <a target="_blank"aria-label="Linkedin Tococo"  href="#">
                                 <i class="fab fa-linkedin"></i>
                             </a>
 
