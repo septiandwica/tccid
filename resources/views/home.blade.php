@@ -88,9 +88,9 @@
                                 <h3>{{ __('prod-tit1') }}</h3>
                                 <p>{{ __('prod-desc1') }}</p>
                                 <div class="btn">
-                                <p>To see all of our  Product <a href="{{ route('product') }}">{{ __('read-btn') }}
+                                 <a href="{{ route('product') }}">{{ __('read-btn') }}
                                         <i class="fa fa-chevron-right"></i>
-                                    </a></p>
+                                    </a>
                                 </div>
                             </div>
                             <div class="img-container">
@@ -108,9 +108,9 @@
                                 <h3>{{ __('prod-tit2') }}</h3>
                                 <p>{{ __('prod-desc2') }}</p>
                                 <div class="btn">
-                                <p>To see all of our  Product <a href="{{ route('product') }}">{{ __('read-btn') }}
+                               <a href="{{ route('product') }}">{{ __('read-btn') }}
                                         <i class="fa fa-chevron-right"></i>
-                                    </a></p>
+                                    </a>
                                 </div>
                             </div>
                             <div class="img-container">
@@ -130,9 +130,9 @@
                                 <h3>{{ __('prod-tit3') }}</h3>
                                 <p>{{ __('prod-desc3') }}</p>
                                 <div class="btn">
-                                <p>To see all of our  Product <a href="{{ route('product') }}">{{ __('read-btn') }}
+                                <a href="{{ route('product') }}">{{ __('read-btn') }}
                                         <i class="fa fa-chevron-right"></i>
-                                    </a></p>
+                                    </a>
                                 </div>
                             </div>
                             <div class="img-container">
@@ -151,9 +151,9 @@
                                 <h3>{{ __('prod-tit4') }}</h3>
                                 <p>{{ __('prod-desc4') }}</p>
                                 <div class="btn">
-                                <p>To see all of our  Product <a href="{{ route('product') }}">{{ __('read-btn') }}
+                                <a href="{{ route('product') }}">{{ __('read-btn') }}
                                         <i class="fa fa-chevron-right"></i>
-                                    </a></p>
+                                    </a>
                                 </div>
                             </div>
                             <div class="img-container">
