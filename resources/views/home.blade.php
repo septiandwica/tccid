@@ -184,11 +184,14 @@
                         <p  data-aos="fade-down" >{{ __('pg-about-tit-desc') }}</p>
                     </div>
                     <div class="container">
-                        <div  data-aos="fade-down" class="img-container">
-                            <img  data-aos="fade-left" data-aos-anchor-placement="top"
-                            data-tilt data-tilt-glare data-tilt-max-glare="0.8"
-                                src="{{ asset('frontend/images/company/tococoindonesiaberkah.jpg') }}"
-                                alt="">
+                        <div  data-aos="fade-down" class="video-container">
+                            <iframe
+                                src="https://www.youtube.com/embed/6jLq0GwhOWs?si=Spr8mF_UD1A07Zgk"
+                                frameborder="0"
+                                title="Tococochips Production Video"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen
+                            ></iframe>
                         </div>
                         <div  data-aos="fade-up" class="text-container">
                             <p>{{ __('pg-about-text-desc') }}</p>
@@ -196,20 +199,10 @@
                             <a href="{{ route('about') }}">{{ __('read-btn') }}
                                 <i class="fa fa-chevron-right"></i>
                             </a>
-                            <button id="videoPopupBtn"><i class="fa fa-play"></i> {{ __('vid-btn') }}</button>
                             </div>
                             
                         </div>
                     </div>
-                </div>
-                <div id="videoModal" class="modal">
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <video id="video" width="100%" controls>
-                            <source src="{{ asset('frontend/images/company/video.mp4') }}" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                     </div>
                 </div>
                 <div class="bottom">
                     <div class="title">
@@ -264,38 +257,10 @@
                           <div class="img-container"  data-aos="fade-down">
                             <div class="sertif-box">
                             <img  
-                                src="{{ asset('frontend/images/achievement/umkmterbaik.jpg') }}"
-                                alt=""
-                               >
-                                <h3>UMKM terbaik oleh ASPIKMAS AKADEMI</h3>
-                            </div>
-                            <div class="sertif-box">
-                            <img  
-                                src="{{ asset('frontend/images/achievement/timfieldterbaik.jpg') }}"
-                                alt=""
-                                >
-                                <h3>Team Field Terbaik oleh ASPIKMAS AKADEMI</h3>
-                            </div>
-                            <div class="sertif-box hidden">
-                            <img  
                                 src="{{ asset('frontend/images/achievement/top5.webp') }}"
                                 alt=""
                                 >
                                 <h3>Top 5 UMKM FnB Track oleh Digital Creative Entrepreneurs</h3>
-                            </div>
-                            <div class="sertif-box hidden">
-                            <img  
-                                src="{{ asset('frontend/images/achievement/top20.webp') }}"
-                                alt=""
-                                >
-                                <h3>Top 20 UMKM DCE oleh Digital Creative Entrepreneurs</h3>
-                            </div>
-                            <div class="sertif-box hidden">
-                            <img  
-                                src="{{ asset('frontend/images/achievement/juara3.jpg') }}"
-                                alt=""
-                                >
-                                <h3>Juara 3 Krenova Kabupaten Banyumas</h3>
                             </div>
                     </div>
                 </div>
@@ -341,41 +306,30 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
        
         var allBoxes = document.querySelectorAll('.img-container .sertif-box');
-        for (var i = 2; i < allBoxes.length; i++) { 
+        for (var i = 1; i < allBoxes.length; i++) { 
             allBoxes[i].classList.add('hidden');
         }
         this.textContent = textLoadMore;
     }
 });
+var videoContainer = document.querySelector('.video-container');
+    var iframe = videoContainer.querySelector('iframe');
+    var videoSrc = iframe.src;
 
-var modal = document.getElementById("videoModal");
-var btn = document.getElementById("videoPopupBtn");
-var span = document.getElementsByClassName("close")[0];
-var video = document.getElementById("video");
+    var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+                // Elemen masuk ke dalam viewport
+                iframe.src = videoSrc.replace("?autoplay=1", "?autoplay=0");
+            } else {
+                // Elemen keluar dari viewport
+                iframe.src = videoSrc.replace("?autoplay=0", "?autoplay=1");
+            }
+        });
+    }, { threshold: 0.5 });
 
-function stopAndResetVideo() {
-    video.pause();
-    video.currentTime = 0;
-}
+    observer.observe(videoContainer);
 
-btn.onclick = function() {
-    modal.style.display = "flex"; 
-    document.body.style.overflow = 'hidden'; 
-    stopAndResetVideo();
-}
 
-span.onclick = function() {
-    modal.style.display = "none";
-    document.body.style.overflow = 'auto'; 
-    stopAndResetVideo();
-}
-
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-        document.body.style.overflow = 'auto'; 
-        stopAndResetVideo();
-    }
-}
         </script>
 @endsection

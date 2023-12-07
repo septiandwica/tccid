@@ -48,7 +48,7 @@
                             <div class="carousel">
                                 <div class="carousel-container">
                                     <div class="img-container">
-                                        <img class="carousel-image p1" src="{{ asset('frontend/images/products/matcha.png') }}" alt="Main Display">
+                                        <img class="carousel-image p1" src="{{ asset('frontend/images/products/tcc2.jpg') }}" alt="Main Display">
                                     </div>
 
                                     <button class="carousel-button prev"><i class="fa fa-chevron-left"></i></button>
@@ -344,7 +344,7 @@ function showProduct(productId) {
   selectedCard.classList.add('active');
 }
 document.addEventListener('DOMContentLoaded', function () {
-    var images = ["{{ asset('frontend/images/products/matcha.png') }}", "{{ asset('frontend/images/products/coklat.png') }}", "{{ asset('frontend/images/products/ori.png') }}", "{{ asset('frontend/images/products/balado.png') }}"]; // Add image paths
+    var images = ["{{ asset('frontend/images/products/tcc2.jpg') }}","{{ asset('frontend/images/products/matcha.png') }}", "{{ asset('frontend/images/products/coklat.png') }}", "{{ asset('frontend/images/products/ori.png') }}", "{{ asset('frontend/images/products/balado.png') }}"]; // Add image paths
     var currentIndex = 0;
 
     function updateImage(index) {

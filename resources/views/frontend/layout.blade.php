@@ -11,7 +11,7 @@
     <link rel="canonical" href="https://sstore.kencang.id/">
     <meta property="og:title" content="Kencang Online Store - Toko Online Terpercaya">
     <meta property="og:description" content="Kencang Online Store adalah toko online terpercaya yang menawarkan berbagai produk berkualitas. Temukan penawaran terbaik kami.">
-    <meta property="og:image" content="https://sstore.kencang.id/images/logo.png">
+    <meta property="og:image" content="https://sstore.kencang.id/images/logo.webp">
     <meta property="og:url" content="https://sstore.kencang.id/">
     <meta name="twitter:card" content="summary_large_image">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -55,7 +55,7 @@
             <div class="bottom-bar">
                 <div class="bottom-bar__content">
                     <a href="{{ route('index') }}" class="logo">
-                        <img class="logo__img" id="logoImg" src="{{ asset('frontend/images/icon/logo.png') }}" alt="logo">
+                        <img class="logo__img" id="logoImg" src="{{ asset('frontend/images/icon/logo.webp') }}" alt="logo">
                         <span class="logo__text">TOCOCO INDONESIA BERKAH</span>
                     </a>
 
@@ -112,7 +112,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col" id="company">
-                        <img src="{{ asset('frontend/images/icon/whitelogo.png') }}" alt="logo" class="logo"> 
+                        <img src="{{ asset('frontend/images/icon/whitelogo.webp') }}" alt="logo" class="logo"> 
                         <p>
                         {{ __('fot-tagline') }}
                         </p>

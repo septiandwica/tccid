@@ -205,6 +205,12 @@
                                             <img src="{{ asset('frontend/images/team/banner.heic') }}" alt="">
                                         </div>
                                         <div class="img">
+                                            <img src="{{ asset('frontend/images/products/tcc2.jpg') }}" alt="">
+                                        </div>
+                                        <div class="img">
+                                            <img src="{{ asset('frontend/images/products/tcc3.webp') }}" alt="">
+                                        </div>
+                                        <div class="img">
                                             <img src="{{ asset('frontend/images/products/palaabcd.webp') }}" alt="">
                                         </div>
                                         <div class="img">
