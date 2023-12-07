@@ -824,6 +824,7 @@ section.products .card .text{
   section.products .right .card:nth-child(1),
   section.products .right .card:nth-child(3)
   {
+    padding: 20px;
     height: auto;
     width: 60%;
     box-shadow: 1px 0px 8px 4px rgba(19,44,4,0.26);

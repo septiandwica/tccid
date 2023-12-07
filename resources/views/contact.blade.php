@@ -121,7 +121,22 @@
                 <div class="email details  contact-card" data-aos="fade-up" data-aos-duration="900" >
                     <i class="fas fa-envelope"></i>
                     <div class="topic">{{__('pg-contact-left3')}}</div>
-                    <div class="text-one">cs@tococoindonesia.com</div>
+                    <div class="text-one">info@tococoindonesia.com</div>
+                </div>
+                <div class="insta details  contact-card" data-aos="fade-up" data-aos-duration="900" >
+                    <i class="fab fa-instagram"></i>
+                    <div class="topic">Instagram</div>
+                    <div class="text-one">@tococochips.id</div>
+                </div>
+                <div class="tiktok details  contact-card" data-aos="fade-up" data-aos-duration="900" >
+                    <i class="fab fa-tiktok"></i>
+                    <div class="topic">Tiktok</div>
+                    <div class="text-one">@tococochipsofficial</div>
+                </div>
+                <div class="linkedin details  contact-card" data-aos="fade-up" data-aos-duration="900" >
+                    <i class="fab fa-linkedin"></i>
+                    <div class="topic">LinkedIn</div>
+                    <div class="text-one">PT Tococo Indonesia Berkah</div>
                 </div>
             </div>
         </div>
