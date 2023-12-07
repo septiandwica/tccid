@@ -55,7 +55,7 @@
             <div class="bottom-bar">
                 <div class="bottom-bar__content">
                     <a href="{{ route('index') }}" class="logo">
-                        <img class="logo__img" id="logoImg" src="{{ asset('frontend/images/icon/whitelogo.png') }}" alt="logo">
+                        <img class="logo__img" id="logoImg" src="{{ asset('frontend/images/icon/logo.png') }}" alt="logo">
                         <span class="logo__text">TOCOCO INDONESIA BERKAH</span>
                     </a>
 
@@ -220,24 +220,6 @@
         isLoading = true;
         showLoader();
     });
-    document.addEventListener('DOMContentLoaded', function () {
-        var logoImg = document.getElementById('logoImg');
-        var bottomBar = document.querySelector('.bottom-bar');
-
-        function updateLogoSource() {
-            if (bottomBar.classList.contains('scrolled') || window.innerWidth < 650) {
-                logoImg.src = '{{ asset("frontend/images/icon/greenlogo.png") }}';
-            } else {
-                logoImg.src = '{{ asset("frontend/images/icon/whitelogo.png") }}';
-            }
-        }
-
-        updateLogoSource();
-
-        window.addEventListener('scroll', updateLogoSource);
-        window.addEventListener('resize', updateLogoSource);
-    });
-    
 </script>
 
         <script src="{{ asset('frontend/vendor/swiper/js/swiper-bundle.min.js') }}"></script>
