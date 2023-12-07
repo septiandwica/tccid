@@ -17,7 +17,7 @@
                 </div>
               </div>
               <div class="slide swiper-slide">
-                <img src="{{ asset('frontend/images/slider/img1.WEBP') }}" alt="" class="image" />
+                <img src="{{ asset('frontend/images/slider/img1.webp') }}" alt="" class="image" />
                 <div class="image-data">
                   <span data-aos="fade-right" data-aos-duration="500" class="text">{{ __('swiper-text1') }}</span>
                   <h2 data-aos="fade-left" data-aos-duration="700">
@@ -233,7 +233,7 @@
                             <img  
                                 id="npwpImage"
                                 data-tilt data-tilt-glare data-tilt-max-glare="0.8"
-                                src="{{ asset('frontend/images/legality/npwp.WEBP') }}"
+                                src="{{ asset('frontend/images/legality/npwp.webp') }}"
                                 alt=""
                                 width="554px">
                             <img
@@ -278,14 +278,14 @@
                             </div>
                             <div class="sertif-box hidden">
                             <img  
-                                src="{{ asset('frontend/images/achievement/top5.WEBP') }}"
+                                src="{{ asset('frontend/images/achievement/top5.webp') }}"
                                 alt=""
                                 >
                                 <h3>Top 5 UMKM FnB Track oleh Digital Creative Entrepreneurs</h3>
                             </div>
                             <div class="sertif-box hidden">
                             <img  
-                                src="{{ asset('frontend/images/achievement/top20.WEBP') }}"
+                                src="{{ asset('frontend/images/achievement/top20.webp') }}"
                                 alt=""
                                 >
                                 <h3>Top 20 UMKM DCE oleh Digital Creative Entrepreneurs</h3>
