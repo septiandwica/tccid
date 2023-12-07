@@ -20,7 +20,7 @@ class ContactController extends Controller
         // Kirim email jika koneksi internet tersedia
         if ($this->isOnline()) {
             $mail_data = [
-                'recipient' => 'septiandwica03@gmail.com', // Ganti dengan alamat email tujuan
+                'recipient' => 'info@pttococo.kencang.id', // Ganti dengan alamat email tujuan
                 'fromEmail' => $request->email,
                 'fromName' => $request->name, 
                 'subject' => $request->subject,
