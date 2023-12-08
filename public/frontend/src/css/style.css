@@ -1031,6 +1031,11 @@ section.about .bottom .img-container img#npwpImage{
     width: 400px;
      height: 225px; 
   }
+  section.about .bottom .container .document .img-container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
   section.about .bottom .container .document .img-container img{
     width: 80%;
   }

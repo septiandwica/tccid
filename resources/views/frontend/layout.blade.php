@@ -4,15 +4,15 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Kencang Store - Toko Online Terpercaya dengan Produk Berkualitas. Temukan berbagai kebutuhan Anda di sini.">
-        <meta name="description" content="Kencang Online Store adalah toko online terpercaya yang menawarkan berbagai produk berkualitas. Temukan penawaran terbaik kami.">
-    <meta name="keywords" content="Kencang, Online Store, produk berkualitas, penawaran terbaik">
+        <meta name="description" content="PT Tococo Indonesia Berkah - Perushaan Rempah Terpercaya dengan Produk Berkualitas. Temukan berbagai kebutuhan Anda di sini.">
+        <meta name="description" content="PT Tococo Indonesia Berkah perushaan komoditas rempah dan kelapa berkualitas. Temukan penawaran terbaik kami.">
+    <meta name="keywords" content="PTTOCOCO, Tococo, produk berkualitas, rempah terbaik, PT Tococo Indonesia Berkah, PT Tococo, Tococochips">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://sstore.kencang.id/">
-    <meta property="og:title" content="Kencang Online Store - Toko Online Terpercaya">
-    <meta property="og:description" content="Kencang Online Store adalah toko online terpercaya yang menawarkan berbagai produk berkualitas. Temukan penawaran terbaik kami.">
-    <meta property="og:image" content="https://sstore.kencang.id/images/logo.webp">
-    <meta property="og:url" content="https://sstore.kencang.id/">
+    <link rel="canonical" href="https://pttococo.kencang.id/">
+    <meta property="og:title" content="PT Tococo Indonesia Berkah - Spices Company Terpercaya">
+    <meta property="og:description" content="PT Tococo Indonesia Berkah adalah perushaan komoditas pertanian terpercaya yang menawarkan berbagai produk berkualitas. Temukan penawaran terbaik kami.">
+    <meta property="og:image" content="https://pttococo.kencang.id/images/logo.webp">
+    <meta property="og:url" content="https://pttococo.kencang.id/">
     <meta name="twitter:card" content="summary_large_image">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link
