@@ -35,9 +35,7 @@
                             <li data-aos="fade-right" data-aos-duration="700"  class="nav__item">
                                 <button onclick="showProduct('pc2')">{{ __('prod-tit2') }}</button>
                             </li>
-                            <li data-aos="fade-left" data-aos-duration="900"  class="nav__item">
-                                <button onclick="showProduct('pc3')">{{ __('prod-tit3') }}</button>
-                            </li>
+
                             <li data-aos="fade-right" data-aos-duration="1100"  class="nav__item">
                                 <button onclick="showProduct('pc4')">{{ __('prod-tit4') }}</button>
                             </li>
@@ -88,202 +86,15 @@
                                 <img
                                     class="p1"
                                     data-tilt data-tilt-glare data-tilt-max-glare="0.8"
-                                    src="{{ asset('frontend/images/products/blackpepper.png') }}"
+                                    src="{{ asset('frontend/images/products/cocofe.png') }}"
                                     alt="">
                             </div>
                             <div class="text">
-                                <h3>{{ __('prod-tit2.1') }}</h3>
-                                <p>{{ __('prod-desc2.1') }}</p>
-                                <div class="desc">
-                                    <p>
-                                    {{ __('pg-product-spec') }}
-                                    </p>
-                                    <ul>
-                                        <li>
-                                            <p>{{ __('prod-p2.1-sp1') }}</p>
-                                        </li>
-                                        <li>
-                                            <p>{{ __('prod-p2.1-sp2') }}</p>
-                                        </li>
-                                        <li>
-                                            <p>{{ __('prod-p2.1-sp3') }}</p>
-                                        </li>
-                                        <li>
-                                            <p>{{ __('prod-p2.1-sp4') }}</p>
-                                        </li>
-                                        <li>
-                                            <p>{{ __('prod-p2.1-sp5') }}</p>
-                                        </li>
-                                        <li>
-                                            <p>{{ __('prod-p2.1-sp6') }}</p>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <h3>{{ __('prod-tit2') }}</h3>
+                                <p>{{ __('prod-desc2') }}</p>
+                               
                             </div>
-                            <div class="img-container">
-                                <img
-                                    class="p1"
-                                    data-tilt data-tilt-glare data-tilt-max-glare="0.8"
-                                    src="{{ asset('frontend/images/products/whitepepper.png') }}"
-                                    alt="">
-                            </div>
-                            <div class="text">
-                            <h3>{{ __('prod-tit2.2') }}</h3>
-                                <p>{{ __('prod-desc2.2') }}</p>
-                                <div class="desc">
-                                    <p>
-                                    {{ __('pg-product-spec') }}
-                                    </p>
-                                    <ul>
-                                        <li>
-                                            <p>{{ __('prod-p2.2-sp1') }}</p>
-                                        </li>
-                                        <li>
-                                            <p>{{ __('prod-p2.2-sp2') }}</p>
-                                        </li>
-                                        <li>
-                                            <p>{{ __('prod-p2.2-sp3') }}</p>
-                                        </li>
-                                        <li>
-                                            <p>{{ __('prod-p2.2-sp4') }}</p>
-                                        </li>
-                                        <li>
-                                            <p>{{ __('prod-p2.2-sp5') }}</p>
-                                        </li>
-                                        <li>
-                                            <p>{{ __('prod-p2.2-sp6') }}</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card pc3" id="pc3">
-                            <div class="img-container">
-                                <img
-                                    class="p1"
-                                    data-tilt data-tilt-glare data-tilt-max-glare="0.8"
-                                    src="{{ asset('frontend/images/products/palaabcd.webp') }}"
-                                    alt="">
-                            </div>
-                            <div class="text">
-                            <h3>{{ __('prod-tit3.1') }}</h3>
-                                <p>{{ __('prod-desc3') }}</p>
-                                <div class="desc">
-                                    <p>
-                                    {{ __('pg-product-spec') }}
-                                    </p>
-                                    <ul>
-                                        <li>
-                                            <p>{{ __('prod-p3.1-sp1') }}</p>
-                                        </li>
-                                        <li>
-                                            <p>{{ __('prod-p3.1-sp2') }}</p>
-                                        </li>
-                                        <li>
-                                            <p>{{ __('prod-p3.1-sp3') }}</p>
-                                        </li>
-                                        <li>
-                                            <p>{{ __('prod-p3.1-sp4') }}</p>
-                                        </li>
-                                        <li>
-                                            <p>{{ __('prod-p3.1-sp5') }}</p>
-                                        </li>
-                                        <li>
-                                            <p>{{ __('prod-p3.1-sp6') }}</p>
-                                        </li>
-                                        <li>
-                                            <p>{{ __('prod-p3.1-sp7') }}</p>
-                                        </li>
-                                        <li>
-                                            <p>{{ __('prod-p3.1-sp8') }}</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="img-container">
-                                <img
-                                    class="p1"
-                                    data-tilt data-tilt-glare data-tilt-max-glare="0.8"
-                                    src="{{ asset('frontend/images/products/palass.webp') }}"
-                                    alt="">
-                            </div>
-                            <div class="text">
-                            <h3>{{ __('prod-tit3.2') }}</h3>
-                                <p>{{ __('prod-desc3') }}</p>
-                                <div class="desc">
-                                    <p>
-                                    {{ __('pg-product-spec') }}
-                                    </p>
-                                    <ul>
-                                        <li>
-                                            <p>{{ __('prod-p3.2-sp1') }}</p>
-                                        </li>
-                                        <li>
-                                            <p>{{ __('prod-p3.2-sp2') }}</p>
-                                        </li>
-                                        <li>
-                                            <p>{{ __('prod-p3.2-sp3') }}</p>
-                                        </li>
-                                        <li>
-                                            <p>{{ __('prod-p3.2-sp4') }}</p>
-                                        </li>
-                                        <li>
-                                            <p>{{ __('prod-p3.2-sp5') }}</p>
-                                        </li>
-                                        <li>
-                                            <p>{{ __('prod-p3.2-sp6') }}</p>
-                                        </li>
-                                        <li>
-                                            <p>{{ __('prod-p3.2-sp7') }}</p>
-                                        </li>
-                                        <li>
-                                            <p>{{ __('prod-p3.2-sp8') }}</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="img-container">
-                                <img
-                                    class="p1"
-                                    data-tilt data-tilt-glare data-tilt-max-glare="0.8"
-                                    src="{{ asset('frontend/images/products/palabwp.webp') }}"
-                                    alt="">
-                            </div>
-                            <div class="text">
-                            <h3>{{ __('prod-tit3.3') }}</h3>
-                                <p>{{ __('prod-desc3') }}</p>
-                                <div class="desc">
-                                    <p>
-                                    {{ __('pg-product-spec') }}
-                                    </p>
-                                    <ul>
-                                        <li>
-                                            <p>{{ __('prod-p3.3-sp1') }}</p>
-                                        </li>
-                                        <li>
-                                            <p>{{ __('prod-p3.3-sp2') }}</p>
-                                        </li>
-                                        <li>
-                                            <p>{{ __('prod-p3.3-sp3') }}</p>
-                                        </li>
-                                        <li>
-                                            <p>{{ __('prod-p3.3-sp4') }}</p>
-                                        </li>
-                                        <li>
-                                            <p>{{ __('prod-p3.3-sp5') }}</p>
-                                        </li>
-                                        <li>
-                                            <p>{{ __('prod-p3.3-sp6') }}</p>
-                                        </li>
-                                        <li>
-                                            <p>{{ __('prod-p3.3-sp7') }}</p>
-                                        </li>
-                                        <li>
-                                            <p>{{ __('prod-p3.3-sp8') }}</p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
+                           
                         </div>
                         <div class="card pc4" id="pc4">
                             <div class="img-container">

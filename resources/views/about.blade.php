@@ -211,13 +211,10 @@
                                             <img src="{{ asset('frontend/images/products/tcc3.webp') }}" alt="">
                                         </div>
                                         <div class="img">
-                                            <img src="{{ asset('frontend/images/products/palaabcd.webp') }}" alt="">
+                                            <img src="{{ asset('frontend/images/products/coffekelapa.jpeg') }}" alt="">
                                         </div>
                                         <div class="img">
-                                            <img src="{{ asset('frontend/images/products/palabwp.webp') }}" alt="">
-                                        </div>
-                                        <div class="img">
-                                            <img src="{{ asset('frontend/images/products/palass.webp') }}" alt="">
+                                            <img src="{{ asset('frontend/images/products/coffee.jpeg') }}" alt="">
                                         </div>
                                         <div class="img">
                                             <img src="{{ asset('frontend/images/products/alcoco(1).webp') }}" alt="">

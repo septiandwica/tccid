@@ -17,7 +17,7 @@
                 </div>
               </div>
               <div class="slide swiper-slide">
-                <img src="{{ asset('frontend/images/slider/img1.webp') }}" alt="" class="image" />
+                <img src="{{ asset('frontend/images/slider/copa.png') }}" alt="" class="image" />
                 <div class="image-data">
                   <span data-aos="fade-right" data-aos-duration="500" class="text">{{ __('swiper-text1') }}</span>
                   <h2 data-aos="fade-left" data-aos-duration="700">
@@ -117,7 +117,7 @@
                                 <img class="pattern" src="{{ asset('frontend/images/products/pattern.png') }}" alt="">
                                 <img
                                 data-tilt data-tilt-glare data-tilt-max-glare="0.8"
-                                    src="{{ asset('frontend/images/products/pepper.png') }}"
+                                    src="{{ asset('frontend/images/products/copaa.png') }}"
                                     alt=""
                                     >
                             </div>
@@ -125,27 +125,6 @@
                     </div>
                     <div class="vline"></div>
                     <div class="right">
-                        <div data-aos="fade-right"class="card"  id="productCard">
-                            <div class="text">
-                                <h3>{{ __('prod-tit3') }}</h3>
-                                <p>{{ __('prod-desc3') }}</p>
-                                <div class="btn">
-                                <a href="{{ route('product') }}">{{ __('read-btn') }}
-                                        <i class="fa fa-chevron-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="img-container">
-                                <img class="pattern" src="{{ asset('frontend/images/products/pattern.png') }}" alt="">
-                                <img
-                                data-tilt data-tilt-glare data-tilt-max-glare="0.8"
-                                    src="{{ asset('frontend/images/products/nutmeg.png') }}"
-                                    alt=""
-                                 >
-                            </div>
-                        </div>
-                        <div class="hline2"></div>
-
                         <div data-aos="fade-right"  class="card" id="productCard" >
                             <div class="text">
                                 <h3>{{ __('prod-tit4') }}</h3>

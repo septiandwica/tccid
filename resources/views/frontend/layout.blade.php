@@ -55,8 +55,11 @@
             <div class="bottom-bar">
                 <div class="bottom-bar__content">
                     <a href="{{ route('index') }}" class="logo">
-                        <img class="logo__img" id="logoImg" src="{{ asset('frontend/images/icon/logo.webp') }}" alt="logo">
-                        <span class="logo__text">TOCOCO INDONESIA BERKAH</span>
+                        <div class="img-logopt">
+                            <img class="logo__img" id="logoImg" src="{{ asset('frontend/images/icon/logo.png') }}"  alt="logo">
+                        </div>
+                        <span class="logo__text">PT TOCOCO INDONESIA <br><span>BERKAH</span>
+                        </span>
                     </a>
 
                     <nav class="nav">
@@ -112,7 +115,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col" id="company">
-                        <img src="{{ asset('frontend/images/icon/whitelogo.webp') }}" alt="logo" class="logo"> 
+                        <img src="{{ asset('frontend/images/icon/blacklogo.png') }}" alt="logo" class="logo"> 
                         <p>
                         {{ __('fot-tagline') }}
                         </p>
@@ -176,7 +179,7 @@
                             document.write(new Date().getFullYear());
                         </script>
                         All rights reserved | Develop with ❤️ By. 
-                        <a class="text-primary" href="https://septiandwica.site">septiandwica</a>
+                        <a class="text-primary" href="https://tiancode.my.id">TIANCODE</a>
                     </p>
                 </div>
             </div>
