@@ -9,7 +9,7 @@
     <meta name="keywords" content="PTTOCOCO, Tococo, produk berkualitas, rempah terbaik, PT Tococo Indonesia Berkah, PT Tococo, Tococochips">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://pttococo.kencang.id/">
-    <meta property="og:title" content="PT Tococo Indonesia Berkah - Spices Company Terpercaya">
+    <meta property="og:title" content="PT Tococo Indonesia Berkah">
     <meta property="og:description" content="PT Tococo Indonesia Berkah adalah perushaan komoditas pertanian terpercaya yang menawarkan berbagai produk berkualitas. Temukan penawaran terbaik kami.">
     <meta property="og:image" content="https://pttococo.kencang.id/images/logo.webp">
     <meta property="og:url" content="https://pttococo.kencang.id/">

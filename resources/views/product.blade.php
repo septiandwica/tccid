@@ -92,6 +92,30 @@
                             <div class="text">
                                 <h3>{{ __('prod-tit2') }}</h3>
                                 <p>{{ __('prod-desc2') }}</p>
+                                <p>{{ __('prod-desc2.1') }}</p>
+                                <p>
+                                    {{ __('pg-product-manfaat') }}
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <p>{{ __('prod-p2-sp1') }}</p>
+                                        </li>
+                                        <li>
+                                            <p>{{ __('prod-p2-sp2') }}</p>
+                                        </li>
+                                        <li>
+                                            <p>{{ __('prod-p2-sp3') }}</p>
+                                        </li>
+                                        <li>
+                                            <p>{{ __('prod-p2-sp4') }}</p>
+                                        </li>
+                                        <li>
+                                            <p>{{ __('prod-p2-sp5') }}</p>
+                                        </li>
+                                        <li>
+                                            <p>{{ __('prod-p2-sp6') }}</p>
+                                        </li>
+                                    </ul>
                                
                             </div>
                            

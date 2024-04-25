@@ -17,7 +17,7 @@
                 </div>
               </div>
               <div class="slide swiper-slide">
-                <img src="{{ asset('frontend/images/slider/copa.png') }}" alt="" class="image" />
+                <img src="{{ asset('frontend/images/slider/cocofebanner.png') }}" alt="" class="image" />
                 <div class="image-data">
                   <span data-aos="fade-right" data-aos-duration="500" class="text">{{ __('swiper-text1') }}</span>
                   <h2 data-aos="fade-left" data-aos-duration="700">
@@ -145,6 +145,7 @@
                                     alt=""
                                     >
                             </div>
+                            
                         </div>
                     </div>
                 </div>
