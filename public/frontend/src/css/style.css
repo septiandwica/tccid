@@ -307,7 +307,7 @@ header.header .hamburger--open .bar:nth-child(3) {
     }
     header.header .nav {
         position: fixed;
-        top: 90px;
+        top: 120px;
         left: -100%;
         transform: translateX(-50%);
         background-color: white;
