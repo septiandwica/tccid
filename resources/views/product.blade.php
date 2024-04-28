@@ -70,12 +70,7 @@
                                         <li>
                                             <p>{{ __('prod-p1-sp3') }}</p>
                                         </li>
-                                        <li>
-                                            <p>{{ __('prod-p1-sp4') }}</p>
-                                        </li>
-                                        <li>
-                                            <p>{{ __('prod-p1-sp5') }}</p>
-                                        </li>
+                                        
                                     </ul>
                                 </div>
                             </div>
@@ -143,15 +138,7 @@
                                         <li>
                                             <p>{{ __('prod-p4-sp2') }}</p>
                                         </li>
-                                        <li>
-                                            <p>{{ __('prod-p4-sp3') }}</p>
-                                        </li>
-                                        <li>
-                                            <p>{{ __('prod-p4-sp4') }}</p>
-                                        </li>
-                                        <li>
-                                            <p>{{ __('prod-p1-sp5') }}</p>
-                                        </li>
+                                        
                                     </ul>
                                 </div>
                             </div>
